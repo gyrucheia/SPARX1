@@ -6,8 +6,19 @@ Imports BCrypt.Net
 
 
 Public Class SubscriberSignup
-    Private ReadOnly CONNECTION_STRING As String =
-        ConfigurationManager.ConnectionStrings("SparxDb").ConnectionString
+    Private _connectionString As String = Nothing
+    Private ReadOnly Property CONNECTION_STRING As String
+        Get
+            If _connectionString Is Nothing AndAlso Not DesignMode Then
+                Try
+                    _connectionString = ConfigurationManager.ConnectionStrings("SparxDb").ConnectionString
+                Catch
+                    _connectionString = String.Empty
+                End Try
+            End If
+            Return If(_connectionString IsNot Nothing, _connectionString, String.Empty)
+        End Get
+    End Property
     Private Sub Label1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -253,16 +264,40 @@ Public Class SubscriberSignup
             PhoneNumber.SelectionStart = PhoneNumber.TextLength
         End If
     End Sub
-
-    ' When a "Login"-type link is clicked inside the signup view, switch parent form to Subscriber login
     Private Sub ButtonRounded5_Click(sender As Object, e As EventArgs) Handles ButtonRounded5.Click
         Dim parentForm = TryCast(Me.FindForm(), sparxLogin)
         If parentForm Is Nothing Then Return
 
         Me.Visible = False
+
+        ' Use Reflection to call UserRole_Click on the parent form.
         Dim methodInfo = parentForm.GetType().GetMethod("UserRole_Click", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic)
         If methodInfo IsNot Nothing Then
-            methodInfo.Invoke(parentForm, New Object() {parentForm.btnSubscriber, EventArgs.Empty})
+            ' CRITICAL FIX: Pass parentForm.lblUserLevel (a Label) as the sender, 
+            ' not the parentForm object itself, to avoid the InvalidCastException.
+            methodInfo.Invoke(parentForm, New Object() {parentForm.lblUserLevel, EventArgs.Empty})
         End If
+    End Sub
+
+    Private Sub LinkBtnLogin_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkBtnLogin.LinkClicked
+        Dim parentForm = TryCast(Me.FindForm(), sparxLogin)
+        If parentForm Is Nothing Then Return
+
+        ' Hide the current Signup Control
+        Me.Visible = False
+
+        ' Find and invoke the UserRole_Click method on the parent sparxLogin form.
+        ' This method handles showing the login controls and hiding any signup/overlay controls.
+        Dim methodInfo = parentForm.GetType().GetMethod("UserRole_Click", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic)
+
+        If methodInfo IsNot Nothing Then
+            ' CRITICAL FIX: We must pass a Label object as the sender to satisfy 
+            ' the logic inside UserRole_Click (e.g., Dim clickedLabel As Label = CType(sender, Label)).
+            ' We use the lblUserLevel control from the parent form.
+            methodInfo.Invoke(parentForm, New Object() {parentForm.lblUserLevel, EventArgs.Empty})
+        End If
+
+        ' Note: The logic to manually show/hide controls (lblEmail.Visible = True, etc.) 
+        ' is now fully handled by the invoked UserRole_Click in the parent form and is not needed here.
     End Sub
 End Class

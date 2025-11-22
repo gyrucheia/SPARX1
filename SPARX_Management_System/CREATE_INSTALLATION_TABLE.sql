@@ -26,3 +26,5 @@ CREATE TABLE `installation` (
 INSERT INTO `installation` (`customer_id`, `installation_date`, `scheduled_date`, `installation_address`, `status`, `service_cost`) VALUES
 (1, '2025-11-05', '2025-11-05', 'Default Installation Address', 'Completed', 500.00),
 (3, '2025-11-22', '2025-11-22', 'Default Installation Address', 'In Progress', 500.00);
+
+

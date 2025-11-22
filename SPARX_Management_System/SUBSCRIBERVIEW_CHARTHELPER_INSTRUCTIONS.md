@@ -448,3 +448,5 @@ Once this works, you can:
 1. Use the same pattern in other views (Installation, Service, etc.)
 2. Customize colors in ChartHelper.vb
 3. Add more chart types (bar charts, line charts, etc.)
+
+

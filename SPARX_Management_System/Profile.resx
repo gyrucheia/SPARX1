@@ -146,4 +146,16 @@
         YII=
 </value>
   </data>
+  <data name="UserPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAXFJREFUSEvdltFNwzAQhjMCG8AIjNAN6AZlg7IBbNARYANG4AmlsRGRUsd9tGxX
+        vHYEuN89R2kwatpEgvJLVuPP57tzcj41+7MSanNdVG4qV37CqBHW+HF85WtzJbV/EbX7jKPQ1oBjXWg/
+        77LRBIdCOxMC1Pb+bb2Z0fNjDFiW5iIvyabDePtwCeVu4Xip7ZxR0FLZO3CcnlGSDVY8GU8b4ZQhGK0z
+        SrLBgjM47b7W8GmIS+UWjJJssPKVmcApEmEUVGj3DF4oO2OUZKOIHD4Fx1RgsvYIssWcRkiqqMw0MrId
+        7/Rt4QZQgHAb8Is5L2WiCoW6x/6PUHzofuE6dgY6YrfxwH60ZsT3On7vHwe9+gfegluzq4UWO0lwsAtg
+        S3S/1OAWHOoCyWJfrIc2O0lov5TEwbbKzQcBt4yS7Cg1DaX2vapaareA/bv+uGSUZL11dAJk9y2BBOut
+        X08AkrW7OfT9o2D3qszeH5IUOxNl2RdXVgPeB/6jxwAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

@@ -8,8 +8,19 @@ Public Class Profile
     Public CurrentLastName As String
     Public CurrentEmail As String
 
-    Private ReadOnly CONNECTION_STRING As String =
-        ConfigurationManager.ConnectionStrings("SparxDb").ConnectionString
+    Private _connectionString As String = Nothing
+    Private ReadOnly Property CONNECTION_STRING As String
+        Get
+            If _connectionString Is Nothing AndAlso Not DesignMode Then
+                Try
+                    _connectionString = ConfigurationManager.ConnectionStrings("SparxDb").ConnectionString
+                Catch
+                    _connectionString = String.Empty
+                End Try
+            End If
+            Return If(_connectionString IsNot Nothing, _connectionString, String.Empty)
+        End Get
+    End Property
 
     Private Sub Profile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Load all subscriber data from database
@@ -84,7 +95,7 @@ Public Class Profile
         ' Parse address string and populate address fields
         ' Address format may vary, so we'll try to parse common formats
         ' For now, we'll split by common delimiters or store as-is
-        
+
         If String.IsNullOrEmpty(addressString) OrElse addressString = "Default Installation Address" Then
             ' Set default/empty values
             UserCountryLbl.Text = ""
@@ -96,10 +107,10 @@ Public Class Profile
             ' Try to parse address - common format might be: "Street, Barangay, Municipality, Province, Country"
             ' Or it might be stored as full text. For now, display the full address in landmark
             ' If you have a specific format, you can parse it here
-            
+
             ' Split by comma if it's comma-separated
             Dim addressParts As String() = addressString.Split(","c)
-            
+
             If addressParts.Length >= 5 Then
                 ' Assume format: Street, Barangay, Municipality, Province, Country
                 UserLandmarkLbl.Text = addressParts(0).Trim()

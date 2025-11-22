@@ -13,6 +13,7 @@ Partial Class sparxLogin
             MyBase.Dispose(disposing)
         End Try
     End Sub
+    Friend WithEvents LinkBtnLogin As LinkLabel
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -26,13 +27,8 @@ Partial Class sparxLogin
         SplitContainer1 = New SplitContainer()
         pnlWelcome = New PanelRound()
         lblWelcome = New Label()
-        btnAdmin = New Label()
-        btnSuperAdmin = New Label()
-        btnSubscriber = New Label()
         sparxLogo = New PictureBox()
         pnlLoginCard = New PanelRound()
-        LinkBtnLogin = New LinkLabel()
-        LblHAA = New Label()
         LinkBtnSignup = New LinkLabel()
         LblDHA = New Label()
         logo = New PictureBox()
@@ -46,8 +42,6 @@ Partial Class sparxLogin
         picShowHide = New PictureBox()
         txtPassword = New TextBox()
         line = New Label()
-        lnkAdminContact = New LinkLabel()
-        lblAccess = New Label()
         pnlEmail = New PanelRound()
         txtEmail = New TextBox()
         CType(SplitContainer1, ComponentModel.ISupportInitialize).BeginInit()
@@ -71,16 +65,13 @@ Partial Class sparxLogin
         ' 
         ' SplitContainer1.Panel1
         ' 
-        SplitContainer1.Panel1.BackgroundImage = My.Resources.SparxBackground
+        SplitContainer1.Panel1.BackgroundImage = CType(resources.GetObject("SplitContainer1.Panel1.BackgroundImage"), Image)
         SplitContainer1.Panel1.Controls.Add(pnlWelcome)
         SplitContainer1.Panel1.ForeColor = Color.FromArgb(CByte(29), CByte(41), CByte(61))
         SplitContainer1.Panel1.RightToLeft = RightToLeft.No
         ' 
         ' SplitContainer1.Panel2
         ' 
-        SplitContainer1.Panel2.Controls.Add(btnAdmin)
-        SplitContainer1.Panel2.Controls.Add(btnSuperAdmin)
-        SplitContainer1.Panel2.Controls.Add(btnSubscriber)
         SplitContainer1.Panel2.Controls.Add(sparxLogo)
         SplitContainer1.Panel2.Controls.Add(pnlLoginCard)
         SplitContainer1.Size = New Size(1481, 796)
@@ -111,49 +102,9 @@ Partial Class sparxLogin
         lblWelcome.TabIndex = 31
         lblWelcome.Text = "Welcome Back!"
         ' 
-        ' btnAdmin
-        ' 
-        btnAdmin.Anchor = AnchorStyles.Top
-        btnAdmin.AutoSize = True
-        btnAdmin.BackColor = Color.Transparent
-        btnAdmin.Cursor = Cursors.Hand
-        btnAdmin.Font = New Font("Verdana", 13.0F)
-        btnAdmin.Location = New Point(308, 46)
-        btnAdmin.Name = "btnAdmin"
-        btnAdmin.Size = New Size(67, 22)
-        btnAdmin.TabIndex = 29
-        btnAdmin.Text = "Admin"
-        ' 
-        ' btnSuperAdmin
-        ' 
-        btnSuperAdmin.Anchor = AnchorStyles.Top
-        btnSuperAdmin.AutoSize = True
-        btnSuperAdmin.BackColor = Color.Transparent
-        btnSuperAdmin.Cursor = Cursors.Hand
-        btnSuperAdmin.Font = New Font("Verdana", 13.0F)
-        btnSuperAdmin.Location = New Point(118, 46)
-        btnSuperAdmin.Name = "btnSuperAdmin"
-        btnSuperAdmin.Size = New Size(126, 22)
-        btnSuperAdmin.TabIndex = 28
-        btnSuperAdmin.Text = "Super Admin"
-        ' 
-        ' btnSubscriber
-        ' 
-        btnSubscriber.Anchor = AnchorStyles.Top
-        btnSubscriber.AutoSize = True
-        btnSubscriber.BackColor = Color.Transparent
-        btnSubscriber.Cursor = Cursors.Hand
-        btnSubscriber.Font = New Font("Verdana", 13.0F)
-        btnSubscriber.Location = New Point(434, 46)
-        btnSubscriber.Name = "btnSubscriber"
-        btnSubscriber.Size = New Size(105, 22)
-        btnSubscriber.TabIndex = 26
-        btnSubscriber.Text = "Subscriber"
-        ' 
         ' sparxLogo
         ' 
         sparxLogo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        sparxLogo.Image = CType(resources.GetObject("sparxLogo.Image"), Image)
         sparxLogo.Location = New Point(146, -389)
         sparxLogo.Name = "sparxLogo"
         sparxLogo.Size = New Size(216, 41)
@@ -165,8 +116,6 @@ Partial Class sparxLogin
         ' 
         pnlLoginCard.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pnlLoginCard.BackColor = Color.White
-        pnlLoginCard.Controls.Add(LinkBtnLogin)
-        pnlLoginCard.Controls.Add(LblHAA)
         pnlLoginCard.Controls.Add(LinkBtnSignup)
         pnlLoginCard.Controls.Add(LblDHA)
         pnlLoginCard.Controls.Add(logo)
@@ -178,40 +127,12 @@ Partial Class sparxLogin
         pnlLoginCard.Controls.Add(lblPassword)
         pnlLoginCard.Controls.Add(pnlPassword)
         pnlLoginCard.Controls.Add(line)
-        pnlLoginCard.Controls.Add(lnkAdminContact)
-        pnlLoginCard.Controls.Add(lblAccess)
         pnlLoginCard.Controls.Add(pnlEmail)
         pnlLoginCard.Font = New Font("Verdana", 8.25F)
         pnlLoginCard.Location = New Point(95, 123)
         pnlLoginCard.Name = "pnlLoginCard"
         pnlLoginCard.Size = New Size(519, 588)
         pnlLoginCard.TabIndex = 25
-        ' 
-        ' LinkBtnLogin
-        ' 
-        LinkBtnLogin.Anchor = AnchorStyles.Bottom
-        LinkBtnLogin.AutoSize = True
-        LinkBtnLogin.Font = New Font("Verdana", 11.0F)
-        LinkBtnLogin.LinkBehavior = LinkBehavior.NeverUnderline
-        LinkBtnLogin.Location = New Point(316, 551)
-        LinkBtnLogin.Name = "LinkBtnLogin"
-        LinkBtnLogin.Size = New Size(47, 18)
-        LinkBtnLogin.TabIndex = 23
-        LinkBtnLogin.TabStop = True
-        LinkBtnLogin.Text = "Login"
-        LinkBtnLogin.Visible = False
-        ' 
-        ' LblHAA
-        ' 
-        LblHAA.Anchor = AnchorStyles.Bottom
-        LblHAA.AutoSize = True
-        LblHAA.Font = New Font("Verdana", 11.0F)
-        LblHAA.Location = New Point(117, 551)
-        LblHAA.Name = "LblHAA"
-        LblHAA.Size = New Size(143, 18)
-        LblHAA.TabIndex = 22
-        LblHAA.Text = "Have An Account?"
-        LblHAA.Visible = False
         ' 
         ' LinkBtnSignup
         ' 
@@ -225,7 +146,6 @@ Partial Class sparxLogin
         LinkBtnSignup.TabIndex = 21
         LinkBtnSignup.TabStop = True
         LinkBtnSignup.Text = "Sign up"
-        LinkBtnSignup.Visible = False
         ' 
         ' LblDHA
         ' 
@@ -237,12 +157,11 @@ Partial Class sparxLogin
         LblDHA.Size = New Size(164, 18)
         LblDHA.TabIndex = 20
         LblDHA.Text = "Don't Have Account?"
-        LblDHA.Visible = False
         ' 
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        logo.Image = My.Resources.SparxLogo2
+        logo.Image = CType(resources.GetObject("logo.Image"), Image)
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(73, 50)
@@ -283,7 +202,7 @@ Partial Class sparxLogin
         lblUserLevel.Name = "lblUserLevel"
         lblUserLevel.Size = New Size(513, 25)
         lblUserLevel.TabIndex = 1
-        lblUserLevel.Text = "Super Admin Login"
+        lblUserLevel.Text = "Sparx Login"
         lblUserLevel.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' chkRemember
@@ -343,7 +262,7 @@ Partial Class sparxLogin
         ' 
         picShowHide.Anchor = AnchorStyles.Right
         picShowHide.Cursor = Cursors.Hand
-        picShowHide.Image = My.Resources.eye_slashed
+        picShowHide.Image = CType(resources.GetObject("picShowHide.Image"), Image)
         picShowHide.Location = New Point(440, 7)
         picShowHide.Name = "picShowHide"
         picShowHide.Size = New Size(25, 25)
@@ -371,34 +290,9 @@ Partial Class sparxLogin
         line.ForeColor = SystemColors.ControlLight
         line.Location = New Point(11, 519)
         line.Name = "line"
-        line.Size = New Size(497, 13)
+        line.Size = New Size(0, 13)
         line.TabIndex = 16
-        line.Text = "______________________________________________________________________"
         line.TextAlign = ContentAlignment.BottomCenter
-        ' 
-        ' lnkAdminContact
-        ' 
-        lnkAdminContact.Anchor = AnchorStyles.Bottom
-        lnkAdminContact.AutoSize = True
-        lnkAdminContact.Font = New Font("Verdana", 11.0F)
-        lnkAdminContact.LinkBehavior = LinkBehavior.NeverUnderline
-        lnkAdminContact.Location = New Point(235, 551)
-        lnkAdminContact.Name = "lnkAdminContact"
-        lnkAdminContact.Size = New Size(172, 18)
-        lnkAdminContact.TabIndex = 18
-        lnkAdminContact.TabStop = True
-        lnkAdminContact.Text = "Contact Administrator"
-        ' 
-        ' lblAccess
-        ' 
-        lblAccess.Anchor = AnchorStyles.Bottom
-        lblAccess.AutoSize = True
-        lblAccess.Font = New Font("Verdana", 11.0F)
-        lblAccess.Location = New Point(117, 551)
-        lblAccess.Name = "lblAccess"
-        lblAccess.Size = New Size(110, 18)
-        lblAccess.TabIndex = 17
-        lblAccess.Text = "Need Access?"
         ' 
         ' pnlEmail
         ' 
@@ -434,7 +328,6 @@ Partial Class sparxLogin
         StartPosition = FormStartPosition.CenterScreen
         SplitContainer1.Panel1.ResumeLayout(False)
         SplitContainer1.Panel2.ResumeLayout(False)
-        SplitContainer1.Panel2.PerformLayout()
         CType(SplitContainer1, ComponentModel.ISupportInitialize).EndInit()
         SplitContainer1.ResumeLayout(False)
         pnlWelcome.ResumeLayout(False)
@@ -452,11 +345,8 @@ Partial Class sparxLogin
     End Sub
     Friend WithEvents pnlWelcomeCard As Panel
     Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents btnSubscriber As Label
     Friend WithEvents pnlWelcome As PanelRound
     Friend WithEvents pnlLoginCard As PanelRound
-    Friend WithEvents lnkAdminContact As LinkLabel
-    Friend WithEvents lblAccess As Label
     Friend WithEvents pnlPassword As PanelRound
     Friend WithEvents picShowHide As PictureBox
     Friend WithEvents txtPassword As TextBox
@@ -469,14 +359,10 @@ Partial Class sparxLogin
     Friend WithEvents lblEmail As Label
     Friend WithEvents lblPassword As Label
     Friend WithEvents sparxLogo As PictureBox
-    Friend WithEvents btnAdmin As Label
-    Friend WithEvents btnSuperAdmin As Label
     Friend WithEvents lblWelcome As Label
     Friend WithEvents logo As PictureBox
     Friend WithEvents line As Label
     Friend WithEvents LinkBtnSignup As LinkLabel
     Friend WithEvents LblDHA As Label
-    Friend WithEvents LblHAA As Label
-    Friend WithEvents LinkBtnLogin As LinkLabel
 
 End Class

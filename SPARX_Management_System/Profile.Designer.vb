@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Profile
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Profile
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Profile))
         ContainerPanel = New Panel()
@@ -82,6 +82,7 @@ Partial Class Profile
         ' 
         ' ContainerPanel
         ' 
+        ContainerPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ContainerPanel.AutoScroll = True
         ContainerPanel.Controls.Add(PanelRound4)
         ContainerPanel.Controls.Add(PanelRound3)
@@ -93,6 +94,7 @@ Partial Class Profile
         ' 
         ' PanelRound4
         ' 
+        PanelRound4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PanelRound4.BackColor = Color.White
         PanelRound4.Controls.Add(EditAddressBtn)
         PanelRound4.Controls.Add(Panel8)
@@ -108,10 +110,11 @@ Partial Class Profile
         ' 
         ' EditAddressBtn
         ' 
+        EditAddressBtn.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EditAddressBtn.FlatAppearance.BorderSize = 0
         EditAddressBtn.FlatStyle = FlatStyle.Flat
         EditAddressBtn.Image = CType(resources.GetObject("EditAddressBtn.Image"), Image)
-        EditAddressBtn.Location = New Point(1029, 4)
+        EditAddressBtn.Location = New Point(972, 3)
         EditAddressBtn.Name = "EditAddressBtn"
         EditAddressBtn.Size = New Size(39, 35)
         EditAddressBtn.TabIndex = 10
@@ -285,6 +288,7 @@ Partial Class Profile
         ' 
         ' PanelRound3
         ' 
+        PanelRound3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PanelRound3.BackColor = Color.White
         PanelRound3.Controls.Add(EditInfoBtn)
         PanelRound3.Controls.Add(Panel4)
@@ -300,10 +304,11 @@ Partial Class Profile
         ' 
         ' EditInfoBtn
         ' 
+        EditInfoBtn.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EditInfoBtn.FlatAppearance.BorderSize = 0
         EditInfoBtn.FlatStyle = FlatStyle.Flat
         EditInfoBtn.Image = CType(resources.GetObject("EditInfoBtn.Image"), Image)
-        EditInfoBtn.Location = New Point(1029, 4)
+        EditInfoBtn.Location = New Point(972, 13)
         EditInfoBtn.Name = "EditInfoBtn"
         EditInfoBtn.Size = New Size(39, 35)
         EditInfoBtn.TabIndex = 3
@@ -479,6 +484,7 @@ Partial Class Profile
         ' 
         ' PanelRound2
         ' 
+        PanelRound2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PanelRound2.BackColor = Color.White
         PanelRound2.Controls.Add(HelloLbl)
         PanelRound2.Controls.Add(UserPicture)
@@ -500,7 +506,7 @@ Partial Class Profile
         ' 
         ' UserPicture
         ' 
-        UserPicture.Image = My.Resources.subscriber
+        UserPicture.Image = CType(resources.GetObject("UserPicture.Image"), Image)
         UserPicture.Location = New Point(26, 13)
         UserPicture.Name = "UserPicture"
         UserPicture.Size = New Size(32, 20)
@@ -590,4 +596,3 @@ Partial Class Profile
     Friend WithEvents UserPicture As PictureBox
 
 End Class
-

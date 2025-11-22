@@ -1,16 +1,18 @@
-# TODO: Fix Compilation Errors in subscriberview
+# TODO: Fix Compilation Errors in sparxLogin and subscriberview
 
-## Errors to Fix:
-1. **Base Class Conflict**: `subscriberview.vb` inherits `Form`, but `subscriberview.Designer.vb` inherits `UserControl`. Change `subscriberview.vb` to inherit `UserControl`.
-2. **Missing Resources**: Add missing resource entries for `GreenWifi`, `GreenPeso`, `OrangeBlocked`, `edit`, and `delete` to `Resources.resx` and `Resources.Designer.vb`.
-   - Note: `delete.png` is not present in the Resources folder. Need to check if it exists or if it's a different name.
-3. **Handles Clause**: Fix `Handles Label1.Click` in `subscriberview.vb` by ensuring `Label1` is declared as `WithEvents` (likely resolved after base class fix).
-4. **Variable Conflict**: `defaultBackColor` conflicts with base class property. Declare it as `Shadows` if found.
+## Errors Fixed:
+1. **Missing Functions in sparxLogin.vb**: Added `ResolvePasswordColumn` and `VerifyPasswordValue` functions, and `ButtonRounded1_Click` handler.
+2. **Base Class Conflict**: `subscriberview.vb` already inherits `UserControl`, matching `subscriberview.Designer.vb`.
+3. **Missing Resources**: Resource entries for `GreenWifi`, `GreenPeso`, `OrangeBlocked`, `edit`, and `delete` are present in `Resources.resx` and `Resources.Designer.vb`.
+   - `delete.png` exists as `delete` in resources.
+4. **Handles Clause**: No `Handles Label1.Click` in `subscriberview.vb`; issue resolved.
+5. **Variable Conflict**: No `defaultBackColor` variable found in codebase.
 
-## Steps:
-- [ ] Change inheritance in `subscriberview.vb` from `Form` to `UserControl`.
-- [ ] Add missing resources to `Resources.resx`.
-- [ ] Update `Resources.Designer.vb` with new properties.
-- [ ] Check for `delete.png` or correct name.
-- [ ] Search and fix any `defaultBackColor` variable.
-- [ ] Test compilation.
+## Steps Completed:
+- [x] Add missing functions and handlers to `sparxLogin.vb`.
+- [x] Change inheritance in `subscriberview.vb` from `Form` to `UserControl`. (Already correct)
+- [x] Add missing resources to `Resources.resx`. (Already present)
+- [x] Update `Resources.Designer.vb` with new properties. (Already present)
+- [x] Check for `delete.png` or correct name. (Exists as `delete`)
+- [x] Search and fix any `defaultBackColor` variable. (Not found)
+- [x] Test compilation. (Build successful)

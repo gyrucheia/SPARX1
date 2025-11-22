@@ -24,6 +24,9 @@ Partial Class SidePanel
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SidePanel))
         MenuPanel = New Panel()
+        Panel1 = New Panel()
+        Label1 = New Label()
+        Button2 = New Button()
         Line2 = New Label()
         HistoryButton = New Button()
         ProfileButton = New Button()
@@ -31,26 +34,23 @@ Partial Class SidePanel
         SparxLogo = New PictureBox()
         MainPanel = New Panel()
         HeaderPanel = New Panel()
-        ContentPanel = New Panel()
         Button1 = New Button()
         Line3 = New Label()
         PanelRound1 = New PanelRound()
         SystemOnlineLbl = New Label()
         HeaderLbl = New Label()
-        Panel1 = New Panel()
-        Label1 = New Label()
-        Button2 = New Button()
+        ContentPanel = New Panel()
         MenuPanel.SuspendLayout()
+        Panel1.SuspendLayout()
         CType(SparxLogo, ComponentModel.ISupportInitialize).BeginInit()
         HeaderPanel.SuspendLayout()
         PanelRound1.SuspendLayout()
-        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' MenuPanel
         ' 
         MenuPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        MenuPanel.BackColor = Color.FromArgb(29, 41, 61)
+        MenuPanel.BackColor = Color.FromArgb(CByte(29), CByte(41), CByte(61))
         MenuPanel.Controls.Add(Panel1)
         MenuPanel.Controls.Add(Line2)
         MenuPanel.Controls.Add(HistoryButton)
@@ -62,159 +62,14 @@ Partial Class SidePanel
         MenuPanel.Size = New Size(240, 751)
         MenuPanel.TabIndex = 1
         ' 
-        ' Line2
-        ' 
-        Line2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
-        Line2.AutoSize = True
-        Line2.ForeColor = Color.FromArgb(42, 53, 72)
-        Line2.Location = New Point(-3, 665)
-        Line2.Name = "Line2"
-        Line2.Size = New Size(247, 15)
-        Line2.TabIndex = 5
-        Line2.Text = "________________________________________________"
-        ' 
-        ' HistoryButton
-        ' 
-        HistoryButton.FlatAppearance.BorderSize = 0
-        HistoryButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(29, 41, 61)
-        HistoryButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 93, 252)
-        HistoryButton.FlatStyle = FlatStyle.Flat
-        HistoryButton.ForeColor = Color.Transparent
-        HistoryButton.Image = CType(resources.GetObject("HistoryButton.Image"), Image)
-        HistoryButton.ImageAlign = ContentAlignment.MiddleLeft
-        HistoryButton.Location = New Point(0, 122)
-        HistoryButton.Name = "HistoryButton"
-        HistoryButton.Padding = New Padding(18, 0, 0, 0)
-        HistoryButton.Size = New Size(240, 39)
-        HistoryButton.TabIndex = 4
-        HistoryButton.Text = "           History"
-        HistoryButton.TextAlign = ContentAlignment.MiddleLeft
-        HistoryButton.UseVisualStyleBackColor = True
-        ' 
-        ' ProfileButton
-        ' 
-        ProfileButton.FlatAppearance.BorderSize = 0
-        ProfileButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(29, 41, 61)
-        ProfileButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 93, 252)
-        ProfileButton.FlatStyle = FlatStyle.Flat
-        ProfileButton.ForeColor = Color.Transparent
-        ProfileButton.Image = My.Resources.subscriber
-        ProfileButton.ImageAlign = ContentAlignment.MiddleLeft
-        ProfileButton.Location = New Point(0, 77)
-        ProfileButton.Name = "ProfileButton"
-        ProfileButton.Padding = New Padding(18, 0, 0, 0)
-        ProfileButton.Size = New Size(240, 39)
-        ProfileButton.TabIndex = 3
-        ProfileButton.Text = "           Profile"
-        ProfileButton.TextAlign = ContentAlignment.MiddleLeft
-        ProfileButton.UseVisualStyleBackColor = True
-        ' 
-        ' Line
-        ' 
-        Line.AutoSize = True
-        Line.ForeColor = Color.FromArgb(42, 53, 72)
-        Line.Location = New Point(-3, 59)
-        Line.Name = "Line"
-        Line.Size = New Size(247, 15)
-        Line.TabIndex = 2
-        Line.Text = "________________________________________________"
-        ' 
-        ' SparxLogo
-        ' 
-        SparxLogo.Image = My.Resources.SparxLogo2
-        SparxLogo.Location = New Point(41, 12)
-        SparxLogo.Name = "SparxLogo"
-        SparxLogo.Size = New Size(117, 55)
-        SparxLogo.SizeMode = PictureBoxSizeMode.Zoom
-        SparxLogo.TabIndex = 2
-        SparxLogo.TabStop = False
-        ' 
-        ' MainPanel
-        ' 
-        MainPanel.Location = New Point(0, 67)
-        MainPanel.Name = "MainPanel"
-        MainPanel.Size = New Size(1130, 681)
-        MainPanel.TabIndex = 2
-        ' 
-        ' HeaderPanel
-        ' 
-        HeaderPanel.BackColor = Color.White
-        HeaderPanel.Controls.Add(Button1)
-        HeaderPanel.Controls.Add(MainPanel)
-        HeaderPanel.Controls.Add(Line3)
-        HeaderPanel.Controls.Add(PanelRound1)
-        HeaderPanel.Controls.Add(HeaderLbl)
-        HeaderPanel.ForeColor = Color.Black
-        HeaderPanel.Location = New Point(240, 0)
-        HeaderPanel.Name = "HeaderPanel"
-        HeaderPanel.Size = New Size(1219, 67)
-        HeaderPanel.TabIndex = 2
-        ' 
-        ' ContentPanel
-        ' 
-        ContentPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        ContentPanel.AutoScroll = True
-        ContentPanel.Location = New Point(240, 67)
-        ContentPanel.Name = "ContentPanel"
-        ContentPanel.Size = New Size(1130, 681)
-        ContentPanel.TabIndex = 3
-        ' 
-        ' Button1
-        ' 
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Image = My.Resources.notificationBell
-        Button1.Location = New Point(1058, 10)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(43, 36)
-        Button1.TabIndex = 5
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Line3
-        ' 
-        Line3.AutoSize = True
-        Line3.Location = New Point(-8, 53)
-        Line3.Name = "Line3"
-        Line3.Size = New Size(1152, 15)
-        Line3.TabIndex = 3
-        Line3.Text = resources.GetString("Line3.Text")
-        ' 
-        ' PanelRound1
-        ' 
-        PanelRound1.BackColor = Color.WhiteSmoke
-        PanelRound1.Controls.Add(SystemOnlineLbl)
-        PanelRound1.Location = New Point(927, 10)
-        PanelRound1.Name = "PanelRound1"
-        PanelRound1.Size = New Size(125, 35)
-        PanelRound1.TabIndex = 2
-        ' 
-        ' SystemOnlineLbl
-        ' 
-        SystemOnlineLbl.AutoSize = True
-        SystemOnlineLbl.Location = New Point(26, 10)
-        SystemOnlineLbl.Name = "SystemOnlineLbl"
-        SystemOnlineLbl.Size = New Size(83, 15)
-        SystemOnlineLbl.TabIndex = 0
-        SystemOnlineLbl.Text = "System Online"
-        ' 
-        ' HeaderLbl
-        ' 
-        HeaderLbl.AutoSize = True
-        HeaderLbl.Font = New Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0)
-        HeaderLbl.Location = New Point(26, 16)
-        HeaderLbl.Name = "HeaderLbl"
-        HeaderLbl.Size = New Size(88, 18)
-        HeaderLbl.TabIndex = 0
-        HeaderLbl.Text = "My Profile"
-        HeaderLbl.TextAlign = ContentAlignment.MiddleLeft
-        ' 
         ' Panel1
         ' 
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(Button2)
-        Panel1.Location = New Point(4, 683)
+        Panel1.Dock = DockStyle.Bottom
+        Panel1.Location = New Point(0, 686)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(230, 65)
+        Panel1.Size = New Size(240, 65)
         Panel1.TabIndex = 17
         ' 
         ' Label1
@@ -247,6 +102,156 @@ Partial Class SidePanel
         Button2.UseCompatibleTextRendering = True
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' Line2
+        ' 
+        Line2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        Line2.AutoSize = True
+        Line2.ForeColor = Color.FromArgb(CByte(42), CByte(53), CByte(72))
+        Line2.Location = New Point(-3, 665)
+        Line2.Name = "Line2"
+        Line2.Size = New Size(247, 15)
+        Line2.TabIndex = 5
+        Line2.Text = "________________________________________________"
+        ' 
+        ' HistoryButton
+        ' 
+        HistoryButton.FlatAppearance.BorderSize = 0
+        HistoryButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(29), CByte(41), CByte(61))
+        HistoryButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(24), CByte(93), CByte(252))
+        HistoryButton.FlatStyle = FlatStyle.Flat
+        HistoryButton.ForeColor = Color.Transparent
+        HistoryButton.Image = CType(resources.GetObject("HistoryButton.Image"), Image)
+        HistoryButton.ImageAlign = ContentAlignment.MiddleLeft
+        HistoryButton.Location = New Point(0, 122)
+        HistoryButton.Name = "HistoryButton"
+        HistoryButton.Padding = New Padding(18, 0, 0, 0)
+        HistoryButton.Size = New Size(240, 39)
+        HistoryButton.TabIndex = 4
+        HistoryButton.Text = "           History"
+        HistoryButton.TextAlign = ContentAlignment.MiddleLeft
+        HistoryButton.UseVisualStyleBackColor = True
+        ' 
+        ' ProfileButton
+        ' 
+        ProfileButton.FlatAppearance.BorderSize = 0
+        ProfileButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(29), CByte(41), CByte(61))
+        ProfileButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(24), CByte(93), CByte(252))
+        ProfileButton.FlatStyle = FlatStyle.Flat
+        ProfileButton.ForeColor = Color.Transparent
+        ProfileButton.Image = CType(resources.GetObject("ProfileButton.Image"), Image)
+        ProfileButton.ImageAlign = ContentAlignment.MiddleLeft
+        ProfileButton.Location = New Point(0, 77)
+        ProfileButton.Name = "ProfileButton"
+        ProfileButton.Padding = New Padding(18, 0, 0, 0)
+        ProfileButton.Size = New Size(240, 39)
+        ProfileButton.TabIndex = 3
+        ProfileButton.Text = "           Profile"
+        ProfileButton.TextAlign = ContentAlignment.MiddleLeft
+        ProfileButton.UseVisualStyleBackColor = True
+        ' 
+        ' Line
+        ' 
+        Line.AutoSize = True
+        Line.ForeColor = Color.FromArgb(CByte(42), CByte(53), CByte(72))
+        Line.Location = New Point(-3, 59)
+        Line.Name = "Line"
+        Line.Size = New Size(247, 15)
+        Line.TabIndex = 2
+        Line.Text = "________________________________________________"
+        ' 
+        ' SparxLogo
+        ' 
+        SparxLogo.Image = CType(resources.GetObject("SparxLogo.Image"), Image)
+        SparxLogo.Location = New Point(41, 12)
+        SparxLogo.Name = "SparxLogo"
+        SparxLogo.Size = New Size(117, 55)
+        SparxLogo.SizeMode = PictureBoxSizeMode.Zoom
+        SparxLogo.TabIndex = 2
+        SparxLogo.TabStop = False
+        ' 
+        ' MainPanel
+        ' 
+        MainPanel.Location = New Point(0, 67)
+        MainPanel.Name = "MainPanel"
+        MainPanel.Size = New Size(1130, 681)
+        MainPanel.TabIndex = 2
+        ' 
+        ' HeaderPanel
+        ' 
+        HeaderPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        HeaderPanel.BackColor = Color.White
+        HeaderPanel.Controls.Add(Button1)
+        HeaderPanel.Controls.Add(MainPanel)
+        HeaderPanel.Controls.Add(Line3)
+        HeaderPanel.Controls.Add(PanelRound1)
+        HeaderPanel.Controls.Add(HeaderLbl)
+        HeaderPanel.ForeColor = Color.Black
+        HeaderPanel.Location = New Point(240, 0)
+        HeaderPanel.Name = "HeaderPanel"
+        HeaderPanel.Size = New Size(1219, 67)
+        HeaderPanel.TabIndex = 2
+        ' 
+        ' Button1
+        ' 
+        Button1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
+        Button1.Location = New Point(1058, 10)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(43, 36)
+        Button1.TabIndex = 5
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Line3
+        ' 
+        Line3.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        Line3.AutoSize = True
+        Line3.Location = New Point(-8, 53)
+        Line3.Name = "Line3"
+        Line3.Size = New Size(1152, 15)
+        Line3.TabIndex = 3
+        Line3.Text = resources.GetString("Line3.Text")
+        ' 
+        ' PanelRound1
+        ' 
+        PanelRound1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PanelRound1.BackColor = Color.WhiteSmoke
+        PanelRound1.Controls.Add(SystemOnlineLbl)
+        PanelRound1.Location = New Point(927, 10)
+        PanelRound1.Name = "PanelRound1"
+        PanelRound1.Size = New Size(125, 35)
+        PanelRound1.TabIndex = 2
+        ' 
+        ' SystemOnlineLbl
+        ' 
+        SystemOnlineLbl.AutoSize = True
+        SystemOnlineLbl.Location = New Point(26, 10)
+        SystemOnlineLbl.Name = "SystemOnlineLbl"
+        SystemOnlineLbl.Size = New Size(83, 15)
+        SystemOnlineLbl.TabIndex = 0
+        SystemOnlineLbl.Text = "System Online"
+        ' 
+        ' HeaderLbl
+        ' 
+        HeaderLbl.AutoSize = True
+        HeaderLbl.Font = New Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        HeaderLbl.Location = New Point(26, 16)
+        HeaderLbl.Name = "HeaderLbl"
+        HeaderLbl.Size = New Size(88, 18)
+        HeaderLbl.TabIndex = 0
+        HeaderLbl.Text = "My Profile"
+        HeaderLbl.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' ContentPanel
+        ' 
+        ContentPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        ContentPanel.AutoScroll = True
+        ContentPanel.Location = New Point(240, 67)
+        ContentPanel.Name = "ContentPanel"
+        ContentPanel.Size = New Size(1130, 681)
+        ContentPanel.TabIndex = 3
+        ' 
         ' SidePanel
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -261,13 +266,13 @@ Partial Class SidePanel
         WindowState = FormWindowState.Maximized
         MenuPanel.ResumeLayout(False)
         MenuPanel.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         CType(SparxLogo, ComponentModel.ISupportInitialize).EndInit()
         HeaderPanel.ResumeLayout(False)
         HeaderPanel.PerformLayout()
         PanelRound1.ResumeLayout(False)
         PanelRound1.PerformLayout()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -290,4 +295,3 @@ Partial Class SidePanel
     Friend WithEvents Button2 As Button
 
 End Class
-

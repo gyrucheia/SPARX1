@@ -59,7 +59,7 @@ Partial Class NewPassword
         ButtonRounded2.Cursor = Cursors.Hand
         ButtonRounded2.FlatAppearance.BorderSize = 0
         ButtonRounded2.FlatStyle = FlatStyle.Flat
-        ButtonRounded2.Font = New Font("Segoe UI", 12.0F)
+        ButtonRounded2.Font = New Font("Segoe UI", 12F)
         ButtonRounded2.ForeColor = Color.Black
         ButtonRounded2.Location = New Point(43, 735)
         ButtonRounded2.Name = "ButtonRounded2"
@@ -76,7 +76,7 @@ Partial Class NewPassword
         ButtonRounded1.Cursor = Cursors.Hand
         ButtonRounded1.FlatAppearance.BorderSize = 0
         ButtonRounded1.FlatStyle = FlatStyle.Flat
-        ButtonRounded1.Font = New Font("Segoe UI", 12.0F)
+        ButtonRounded1.Font = New Font("Segoe UI", 12F)
         ButtonRounded1.ForeColor = Color.White
         ButtonRounded1.Location = New Point(24, 466)
         ButtonRounded1.Name = "ButtonRounded1"
@@ -102,7 +102,7 @@ Partial Class NewPassword
         ' 
         LinkBtnLogin.Anchor = AnchorStyles.Bottom
         LinkBtnLogin.AutoSize = True
-        LinkBtnLogin.Font = New Font("Verdana", 11.0F)
+        LinkBtnLogin.Font = New Font("Verdana", 11F)
         LinkBtnLogin.LinkBehavior = LinkBehavior.NeverUnderline
         LinkBtnLogin.Location = New Point(665, 1546)
         LinkBtnLogin.Name = "LinkBtnLogin"
@@ -116,7 +116,7 @@ Partial Class NewPassword
         ' 
         LblHAA.Anchor = AnchorStyles.Bottom
         LblHAA.AutoSize = True
-        LblHAA.Font = New Font("Verdana", 11.0F)
+        LblHAA.Font = New Font("Verdana", 11F)
         LblHAA.Location = New Point(466, 1546)
         LblHAA.Name = "LblHAA"
         LblHAA.Size = New Size(143, 18)
@@ -128,7 +128,7 @@ Partial Class NewPassword
         ' 
         LinkBtnSignup.Anchor = AnchorStyles.Bottom
         LinkBtnSignup.AutoSize = True
-        LinkBtnSignup.Font = New Font("Verdana", 11.0F)
+        LinkBtnSignup.Font = New Font("Verdana", 11F)
         LinkBtnSignup.LinkBehavior = LinkBehavior.NeverUnderline
         LinkBtnSignup.Location = New Point(665, 1546)
         LinkBtnSignup.Name = "LinkBtnSignup"
@@ -142,7 +142,7 @@ Partial Class NewPassword
         ' 
         LblDHA.Anchor = AnchorStyles.Bottom
         LblDHA.AutoSize = True
-        LblDHA.Font = New Font("Verdana", 11.0F)
+        LblDHA.Font = New Font("Verdana", 11F)
         LblDHA.Location = New Point(478, 1546)
         LblDHA.Name = "LblDHA"
         LblDHA.Size = New Size(164, 18)
@@ -155,7 +155,7 @@ Partial Class NewPassword
         lblEmail.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lblEmail.AutoSize = True
         lblEmail.BackColor = Color.Transparent
-        lblEmail.Font = New Font("Verdana", 11.0F)
+        lblEmail.Font = New Font("Verdana", 11F)
         lblEmail.Location = New Point(24, 262)
         lblEmail.Name = "lblEmail"
         lblEmail.Size = New Size(118, 18)
@@ -177,7 +177,7 @@ Partial Class NewPassword
         ' 
         lnkAdminContact.Anchor = AnchorStyles.Bottom
         lnkAdminContact.AutoSize = True
-        lnkAdminContact.Font = New Font("Verdana", 11.0F)
+        lnkAdminContact.Font = New Font("Verdana", 11F)
         lnkAdminContact.LinkBehavior = LinkBehavior.NeverUnderline
         lnkAdminContact.Location = New Point(584, 1546)
         lnkAdminContact.Name = "lnkAdminContact"
@@ -190,7 +190,7 @@ Partial Class NewPassword
         ' 
         lblAccess.Anchor = AnchorStyles.Bottom
         lblAccess.AutoSize = True
-        lblAccess.Font = New Font("Verdana", 11.0F)
+        lblAccess.Font = New Font("Verdana", 11F)
         lblAccess.Location = New Point(466, 1546)
         lblAccess.Name = "lblAccess"
         lblAccess.Size = New Size(110, 18)
@@ -200,7 +200,6 @@ Partial Class NewPassword
         ' sparxLogo
         ' 
         sparxLogo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        sparxLogo.Image = CType(resources.GetObject("sparxLogo.Image"), Image)
         sparxLogo.Location = New Point(41, -240)
         sparxLogo.Name = "sparxLogo"
         sparxLogo.Size = New Size(110, 52)
@@ -255,7 +254,7 @@ Partial Class NewPassword
         ButtonRounded4.Cursor = Cursors.Hand
         ButtonRounded4.FlatAppearance.BorderSize = 0
         ButtonRounded4.FlatStyle = FlatStyle.Flat
-        ButtonRounded4.Font = New Font("Segoe UI", 12.0F)
+        ButtonRounded4.Font = New Font("Segoe UI", 12F)
         ButtonRounded4.ForeColor = Color.Black
         ButtonRounded4.Location = New Point(24, 520)
         ButtonRounded4.Name = "ButtonRounded4"
@@ -269,7 +268,7 @@ Partial Class NewPassword
         Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Verdana", 11.0F)
+        Label2.Font = New Font("Verdana", 11F)
         Label2.Location = New Point(24, 362)
         Label2.Name = "Label2"
         Label2.Size = New Size(188, 18)
@@ -294,7 +293,7 @@ Partial Class NewPassword
         TextBox1.BorderStyle = BorderStyle.None
         TextBox1.CharacterCasing = CharacterCasing.Lower
         TextBox1.Cursor = Cursors.Hand
-        TextBox1.Font = New Font("Segoe UI", 12.0F)
+        TextBox1.Font = New Font("Segoe UI", 12F)
         TextBox1.Location = New Point(8, 10)
         TextBox1.Name = "TextBox1"
         TextBox1.PlaceholderText = "Re-enter new Passowrd"
@@ -319,7 +318,7 @@ Partial Class NewPassword
         txtEmail.BorderStyle = BorderStyle.None
         txtEmail.CharacterCasing = CharacterCasing.Lower
         txtEmail.Cursor = Cursors.Hand
-        txtEmail.Font = New Font("Segoe UI", 12.0F)
+        txtEmail.Font = New Font("Segoe UI", 12F)
         txtEmail.Location = New Point(8, 10)
         txtEmail.Name = "txtEmail"
         txtEmail.PlaceholderText = "Enter New Password"
@@ -329,7 +328,7 @@ Partial Class NewPassword
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        logo.Image = My.Resources.SparxLogo2
+        logo.Image = CType(resources.GetObject("logo.Image"), Image)
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(73, 50)
@@ -339,7 +338,7 @@ Partial Class NewPassword
         ' 
         ' NewPassword
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(pnlLoginCard)
         Controls.Add(sparxLogo)

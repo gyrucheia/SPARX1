@@ -10,8 +10,19 @@ Imports LiveCharts.WinForms
 Public Class dashboardview
 
     ' Database connection
-    Private ReadOnly CONNECTION_STRING As String =
-        ConfigurationManager.ConnectionStrings("SparxDb").ConnectionString
+    Private _connectionString As String = Nothing
+    Private ReadOnly Property CONNECTION_STRING As String
+        Get
+            If _connectionString Is Nothing AndAlso Not DesignMode Then
+                Try
+                    _connectionString = ConfigurationManager.ConnectionStrings("SparxDb").ConnectionString
+                Catch
+                    _connectionString = String.Empty
+                End Try
+            End If
+            Return If(_connectionString IsNot Nothing, _connectionString, String.Empty)
+        End Get
+    End Property
 
     ' Chart controls (use WinForms version explicitly)
     Private ChartSubscriberGrowth As LiveCharts.WinForms.CartesianChart
@@ -442,4 +453,7 @@ Public Class dashboardview
         Me.ChartSubscribersByPlan.Series = pieSeries
     End Sub
 
+    Private Sub PanelRound2_Paint(sender As Object, e As PaintEventArgs) Handles PanelRound2.Paint
+
+    End Sub
 End Class

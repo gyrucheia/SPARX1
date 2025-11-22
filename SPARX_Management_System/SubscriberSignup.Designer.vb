@@ -22,6 +22,7 @@ Partial Class SubscriberSignup
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SubscriberSignup))
         pnlLoginCard = New PanelRound()
         line = New Label()
         LinkBtnLogin = New LinkLabel()
@@ -112,7 +113,7 @@ Partial Class SubscriberSignup
         ' 
         LinkBtnLogin.Anchor = AnchorStyles.Bottom
         LinkBtnLogin.AutoSize = True
-        LinkBtnLogin.Font = New Font("Verdana", 11.0F)
+        LinkBtnLogin.Font = New Font("Verdana", 11F)
         LinkBtnLogin.LinkBehavior = LinkBehavior.NeverUnderline
         LinkBtnLogin.Location = New Point(294, 661)
         LinkBtnLogin.Name = "LinkBtnLogin"
@@ -125,7 +126,8 @@ Partial Class SubscriberSignup
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        logo.Image = My.Resources.SparxLogo2
+        logo.ErrorImage = CType(resources.GetObject("logo.ErrorImage"), Image)
+        logo.Image = CType(resources.GetObject("logo.Image"), Image)
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(93, 60)
@@ -138,7 +140,7 @@ Partial Class SubscriberSignup
         Label4.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Verdana", 11.0F)
+        Label4.Font = New Font("Verdana", 11F)
         Label4.Location = New Point(138, 661)
         Label4.Name = "Label4"
         Label4.Size = New Size(141, 18)
@@ -150,7 +152,7 @@ Partial Class SubscriberSignup
         Label5.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Verdana", 11.0F)
+        Label5.Font = New Font("Verdana", 11F)
         Label5.Location = New Point(273, 171)
         Label5.Name = "Label5"
         Label5.Size = New Size(88, 18)
@@ -165,7 +167,7 @@ Partial Class SubscriberSignup
         ButtonRounded3.Cursor = Cursors.Hand
         ButtonRounded3.FlatAppearance.BorderSize = 0
         ButtonRounded3.FlatStyle = FlatStyle.Flat
-        ButtonRounded3.Font = New Font("Segoe UI", 12.0F)
+        ButtonRounded3.Font = New Font("Segoe UI", 12F)
         ButtonRounded3.ForeColor = Color.White
         ButtonRounded3.Location = New Point(26, 600)
         ButtonRounded3.Name = "ButtonRounded3"
@@ -179,7 +181,7 @@ Partial Class SubscriberSignup
         Label3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Verdana", 11.0F)
+        Label3.Font = New Font("Verdana", 11F)
         Label3.Location = New Point(25, 480)
         Label3.Name = "Label3"
         Label3.Size = New Size(150, 18)
@@ -203,7 +205,7 @@ Partial Class SubscriberSignup
         TextBox4.BackColor = Color.WhiteSmoke
         TextBox4.BorderStyle = BorderStyle.None
         TextBox4.Cursor = Cursors.Hand
-        TextBox4.Font = New Font("Segoe UI", 12.0F)
+        TextBox4.Font = New Font("Segoe UI", 12F)
         TextBox4.Location = New Point(5, 10)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(461, 22)
@@ -214,7 +216,7 @@ Partial Class SubscriberSignup
         Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Verdana", 11.0F)
+        Label2.Font = New Font("Verdana", 11F)
         Label2.Location = New Point(25, 405)
         Label2.Name = "Label2"
         Label2.Size = New Size(80, 18)
@@ -238,7 +240,7 @@ Partial Class SubscriberSignup
         TextBox3.BackColor = Color.WhiteSmoke
         TextBox3.BorderStyle = BorderStyle.None
         TextBox3.Cursor = Cursors.Hand
-        TextBox3.Font = New Font("Segoe UI", 12.0F)
+        TextBox3.Font = New Font("Segoe UI", 12F)
         TextBox3.Location = New Point(5, 10)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(461, 22)
@@ -249,7 +251,7 @@ Partial Class SubscriberSignup
         Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Verdana", 11.0F)
+        Label1.Font = New Font("Verdana", 11F)
         Label1.Location = New Point(23, 330)
         Label1.Name = "Label1"
         Label1.Size = New Size(118, 18)
@@ -273,7 +275,7 @@ Partial Class SubscriberSignup
         PhoneNumber.BackColor = Color.WhiteSmoke
         PhoneNumber.BorderStyle = BorderStyle.None
         PhoneNumber.Cursor = Cursors.Hand
-        PhoneNumber.Font = New Font("Segoe UI", 12.0F)
+        PhoneNumber.Font = New Font("Segoe UI", 12F)
         PhoneNumber.Location = New Point(7, 10)
         PhoneNumber.Name = "PhoneNumber"
         PhoneNumber.Size = New Size(461, 22)
@@ -297,7 +299,7 @@ Partial Class SubscriberSignup
         TextBox1.BorderStyle = BorderStyle.None
         TextBox1.CharacterCasing = CharacterCasing.Lower
         TextBox1.Cursor = Cursors.Hand
-        TextBox1.Font = New Font("Segoe UI", 12.0F)
+        TextBox1.Font = New Font("Segoe UI", 12F)
         TextBox1.Location = New Point(9, 10)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(210, 22)
@@ -307,7 +309,7 @@ Partial Class SubscriberSignup
         ' 
         LblHAA.Anchor = AnchorStyles.Bottom
         LblHAA.AutoSize = True
-        LblHAA.Font = New Font("Verdana", 11.0F)
+        LblHAA.Font = New Font("Verdana", 11F)
         LblHAA.Location = New Point(276, 1166)
         LblHAA.Name = "LblHAA"
         LblHAA.Size = New Size(143, 18)
@@ -319,7 +321,7 @@ Partial Class SubscriberSignup
         ' 
         LinkBtnSignup.Anchor = AnchorStyles.Bottom
         LinkBtnSignup.AutoSize = True
-        LinkBtnSignup.Font = New Font("Verdana", 11.0F)
+        LinkBtnSignup.Font = New Font("Verdana", 11F)
         LinkBtnSignup.LinkBehavior = LinkBehavior.NeverUnderline
         LinkBtnSignup.Location = New Point(475, 1166)
         LinkBtnSignup.Name = "LinkBtnSignup"
@@ -333,7 +335,7 @@ Partial Class SubscriberSignup
         ' 
         LblDHA.Anchor = AnchorStyles.Bottom
         LblDHA.AutoSize = True
-        LblDHA.Font = New Font("Verdana", 11.0F)
+        LblDHA.Font = New Font("Verdana", 11F)
         LblDHA.Location = New Point(288, 1166)
         LblDHA.Name = "LblDHA"
         LblDHA.Size = New Size(164, 18)
@@ -346,7 +348,7 @@ Partial Class SubscriberSignup
         lblEmail.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lblEmail.AutoSize = True
         lblEmail.BackColor = Color.Transparent
-        lblEmail.Font = New Font("Verdana", 11.0F)
+        lblEmail.Font = New Font("Verdana", 11F)
         lblEmail.Location = New Point(23, 171)
         lblEmail.Name = "lblEmail"
         lblEmail.Size = New Size(89, 18)
@@ -361,7 +363,7 @@ Partial Class SubscriberSignup
         ButtonRounded5.Cursor = Cursors.Hand
         ButtonRounded5.FlatAppearance.BorderSize = 0
         ButtonRounded5.FlatStyle = FlatStyle.Flat
-        ButtonRounded5.Font = New Font("Segoe UI", 12.0F)
+        ButtonRounded5.Font = New Font("Segoe UI", 12F)
         ButtonRounded5.ForeColor = Color.MediumBlue
         ButtonRounded5.Location = New Point(274, 645)
         ButtonRounded5.Name = "ButtonRounded5"
@@ -378,14 +380,14 @@ Partial Class SubscriberSignup
         lblUserLevel.Name = "lblUserLevel"
         lblUserLevel.Size = New Size(513, 25)
         lblUserLevel.TabIndex = 1
-        lblUserLevel.Text = "Super Admin Login"
+        lblUserLevel.Text = "Create Account"
         lblUserLevel.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' chkRemember
         ' 
         chkRemember.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         chkRemember.AutoSize = True
-        chkRemember.Font = New Font("Verdana", 11.0F)
+        chkRemember.Font = New Font("Verdana", 11F)
         chkRemember.Location = New Point(26, 558)
         chkRemember.Name = "chkRemember"
         chkRemember.Size = New Size(138, 22)
@@ -398,7 +400,7 @@ Partial Class SubscriberSignup
         lblPassword.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lblPassword.AutoSize = True
         lblPassword.BackColor = Color.Transparent
-        lblPassword.Font = New Font("Verdana", 11.0F)
+        lblPassword.Font = New Font("Verdana", 11F)
         lblPassword.Location = New Point(23, 260)
         lblPassword.Name = "lblPassword"
         lblPassword.Size = New Size(111, 18)
@@ -422,7 +424,7 @@ Partial Class SubscriberSignup
         txtPassword.BackColor = Color.WhiteSmoke
         txtPassword.BorderStyle = BorderStyle.None
         txtPassword.Cursor = Cursors.Hand
-        txtPassword.Font = New Font("Segoe UI", 12.0F)
+        txtPassword.Font = New Font("Segoe UI", 12F)
         txtPassword.Location = New Point(7, 10)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(461, 22)
@@ -446,7 +448,7 @@ Partial Class SubscriberSignup
         txtEmail.BorderStyle = BorderStyle.None
         txtEmail.CharacterCasing = CharacterCasing.Lower
         txtEmail.Cursor = Cursors.Hand
-        txtEmail.Font = New Font("Segoe UI", 12.0F)
+        txtEmail.Font = New Font("Segoe UI", 12F)
         txtEmail.Location = New Point(8, 10)
         txtEmail.Name = "txtEmail"
         txtEmail.Size = New Size(213, 22)
@@ -454,7 +456,7 @@ Partial Class SubscriberSignup
         ' 
         ' SubscriberSignup
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         Controls.Add(pnlLoginCard)

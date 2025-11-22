@@ -284,6 +284,17 @@ Namespace My
                 Return CType(ResourceManager.GetObject("TotalSusbcribers", resourceCulture), System.Drawing.Bitmap)
             End Get
         End Property
+
+        Friend Function Resources() As Object
+            Return ResourceManager
+        End Function
+
+        Friend Function export() As Image
+            Return CType(ResourceManager.GetObject("export", resourceCulture), Image)
+        End Function
+
+        Friend Function Pending() As Image
+            Return CType(ResourceManager.GetObject("Pending", resourceCulture), Image)
+        End Function
     End Module
 End Namespace
-

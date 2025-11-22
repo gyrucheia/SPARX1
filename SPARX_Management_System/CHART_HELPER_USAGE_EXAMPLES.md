@@ -205,3 +205,5 @@ End Class
 3. **Easy to Maintain**: Change chart styling in one place (ChartHelper)
 4. **Reusable**: Use the same helper across all views
 5. **Type-Safe**: Uses generics for DataGridView binding
+
+
