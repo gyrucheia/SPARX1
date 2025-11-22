@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class History
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class History
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel2 = New Panel()
         PanelRound1 = New PanelRound()
@@ -220,7 +220,7 @@ Partial Class History
         ' FilterLbl
         ' 
         FilterLbl.AutoSize = True
-        FilterLbl.Font = New Font("Verdana", 12F)
+        FilterLbl.Font = New Font("Verdana", 12.0F)
         FilterLbl.Location = New Point(51, 16)
         FilterLbl.Name = "FilterLbl"
         FilterLbl.Size = New Size(59, 18)
@@ -229,7 +229,7 @@ Partial Class History
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.Resources.filter
+        PictureBox1.Image = My.Resources.filter
         PictureBox1.Location = New Point(25, 14)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(20, 20)
@@ -239,7 +239,7 @@ Partial Class History
         ' 
         ' History
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         Controls.Add(Panel2)
@@ -277,3 +277,4 @@ Partial Class History
     Friend WithEvents HistoryTable As DataGridView
 
 End Class
+

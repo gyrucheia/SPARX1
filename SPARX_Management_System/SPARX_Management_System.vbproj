@@ -3,7 +3,6 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
@@ -17,14 +16,13 @@
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="LiveCharts.Core" Version="0.9.8" />
-    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <PackageReference Include="LiveCharts.WinForms.NetCore3" Version="0.9.8" />
+    <PackageReference Include="MySqlConnector" Version="2.5.0" />
+    <PackageReference Include="ScottPlot.WinForms" Version="5.1.57" />
     <PackageReference Include="SkiaSharp" Version="3.119.1" />
     <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="3.119.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Sparx_Subscriber-main\Sparx_Subscriber\Sparx_Subscriber.vbproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="My Project\Application.Designer.vb">
@@ -62,6 +60,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="admin1\*.resx" />
+    <Compile Remove="admin1\*.vb" />
+    <Compile Remove="admin1\*.Designer.vb" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class SubscriberSignup
     Inherits System.Windows.Forms.UserControl
 
@@ -125,7 +125,7 @@ Partial Class SubscriberSignup
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        logo.Image = My.Resources.Resources.SparxLogo2
+        logo.Image = My.Resources.SparxLogo2
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(93, 60)
@@ -520,3 +520,4 @@ Partial Class SubscriberSignup
     Friend WithEvents line As Label
 
 End Class
+

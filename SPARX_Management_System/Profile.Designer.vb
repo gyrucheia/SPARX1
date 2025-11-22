@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Profile
     Inherits System.Windows.Forms.UserControl
 
@@ -500,7 +500,7 @@ Partial Class Profile
         ' 
         ' UserPicture
         ' 
-        UserPicture.Image = My.Resources.Resources.subscriber
+        UserPicture.Image = My.Resources.subscriber
         UserPicture.Location = New Point(26, 13)
         UserPicture.Name = "UserPicture"
         UserPicture.Size = New Size(32, 20)
@@ -590,3 +590,4 @@ Partial Class Profile
     Friend WithEvents UserPicture As PictureBox
 
 End Class
+

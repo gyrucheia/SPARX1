@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SidePanel
     Inherits System.Windows.Forms.Form
 
@@ -98,7 +98,7 @@ Partial Class SidePanel
         ProfileButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(24, 93, 252)
         ProfileButton.FlatStyle = FlatStyle.Flat
         ProfileButton.ForeColor = Color.Transparent
-        ProfileButton.Image = My.Resources.Resources.subscriber
+        ProfileButton.Image = My.Resources.subscriber
         ProfileButton.ImageAlign = ContentAlignment.MiddleLeft
         ProfileButton.Location = New Point(0, 77)
         ProfileButton.Name = "ProfileButton"
@@ -121,7 +121,7 @@ Partial Class SidePanel
         ' 
         ' SparxLogo
         ' 
-        SparxLogo.Image = My.Resources.Resources.SparxLogo2
+        SparxLogo.Image = My.Resources.SparxLogo2
         SparxLogo.Location = New Point(41, 12)
         SparxLogo.Name = "SparxLogo"
         SparxLogo.Size = New Size(117, 55)
@@ -163,7 +163,7 @@ Partial Class SidePanel
         ' 
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
-        Button1.Image = My.Resources.Resources.notificationBell
+        Button1.Image = My.Resources.notificationBell
         Button1.Location = New Point(1058, 10)
         Button1.Name = "Button1"
         Button1.Size = New Size(43, 36)
@@ -290,3 +290,4 @@ Partial Class SidePanel
     Friend WithEvents Button2 As Button
 
 End Class
+

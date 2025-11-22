@@ -34,6 +34,11 @@ Public Class sparxLogin
             pnlLoginCard.Controls.Add(subscriberSignUpControl)
             subscriberSignUpControl.Visible = False
         End If
+
+        ' Default to login view – keep signup hidden until user explicitly requests it.
+        If subscriberSignUpControl IsNot Nothing Then
+            subscriberSignUpControl.Visible = False
+        End If
     End Sub
 
     Private Function TestConnection() As Boolean
@@ -98,8 +103,10 @@ Public Class sparxLogin
             pnlLoginCard.Controls.Remove(c)
         Next
 
-        lblEmail.Visible = True
-        lblPassword.Visible = True
+        If ForgotView IsNot Nothing Then
+            ForgotView.Visible = False
+        End If
+
         txtEmail.Visible = True
         txtPassword.Visible = True
         pnlEmail.Visible = True
@@ -351,8 +358,10 @@ Public Class sparxLogin
                                 AddHandler dash.FormClosed, Sub() Me.Close()
 
                             Case ROLE_ADMIN
-                                ' Dim f As New AdminDashboard() : Me.Hide() : f.Show()
-                                ' AddHandler f.FormClosed, Sub() Me.Close()
+                                Dim adminPortal As New Tabs()
+                                Me.Hide()
+                                adminPortal.Show()
+                                AddHandler adminPortal.FormClosed, Sub() Me.Close()
 
                             Case ROLE_CUSTOMER_SERVICE
                                 ' Dim f As New CustomerServiceDashboard() : Me.Hide() : f.Show()

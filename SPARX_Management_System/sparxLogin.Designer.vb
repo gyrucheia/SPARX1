@@ -71,7 +71,7 @@ Partial Class sparxLogin
         ' 
         ' SplitContainer1.Panel1
         ' 
-        SplitContainer1.Panel1.BackgroundImage = My.Resources.Resources.SparxBackground
+        SplitContainer1.Panel1.BackgroundImage = My.Resources.SparxBackground
         SplitContainer1.Panel1.Controls.Add(pnlWelcome)
         SplitContainer1.Panel1.ForeColor = Color.FromArgb(CByte(29), CByte(41), CByte(61))
         SplitContainer1.Panel1.RightToLeft = RightToLeft.No
@@ -242,7 +242,7 @@ Partial Class sparxLogin
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        logo.Image = My.Resources.Resources.SparxLogo2
+        logo.Image = My.Resources.SparxLogo2
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(73, 50)
@@ -343,7 +343,7 @@ Partial Class sparxLogin
         ' 
         picShowHide.Anchor = AnchorStyles.Right
         picShowHide.Cursor = Cursors.Hand
-        picShowHide.Image = My.Resources.Resources.eye_slashed
+        picShowHide.Image = My.Resources.eye_slashed
         picShowHide.Location = New Point(440, 7)
         picShowHide.Name = "picShowHide"
         picShowHide.Size = New Size(25, 25)

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class EditInfo
     Inherits System.Windows.Forms.Form
 
@@ -236,3 +236,4 @@ Partial Class EditInfo
     Friend WithEvents UpdateBtn As ButtonRounded
     Friend WithEvents ChangePassBtn As Button
 End Class
+

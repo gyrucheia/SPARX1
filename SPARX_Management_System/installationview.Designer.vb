@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class installationview
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class installationview
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(installationview))
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         HeaderInstallationReport = New Label()
@@ -51,6 +52,7 @@ Partial Class installationview
         NumPending = New Label()
         LabelPending = New Label()
         PanelSubscribersPlan = New PanelRound()
+        Panel1 = New Panel()
         LabelInstallationStatusDistribution = New Label()
         PnlCancelled = New PanelRound()
         PercentCancelled = New Label()
@@ -78,6 +80,7 @@ Partial Class installationview
         Status = New DataGridViewTextBoxColumn()
         EditDelete = New DataGridViewTextBoxColumn()
         PanelInstallationDetails = New PanelRound()
+        TableLayoutPanel1 = New TableLayoutPanel()
         LabelInstallationDetails = New Label()
         PanelRound1.SuspendLayout()
         CType(IconFilter, ComponentModel.ISupportInitialize).BeginInit()
@@ -105,7 +108,7 @@ Partial Class installationview
         ' HeaderInstallationReport
         ' 
         HeaderInstallationReport.AutoSize = True
-        HeaderInstallationReport.Font = New Font("Segoe UI Semibold", 15F, FontStyle.Bold)
+        HeaderInstallationReport.Font = New Font("Segoe UI Semibold", 15.0F, FontStyle.Bold)
         HeaderInstallationReport.Location = New Point(43, 18)
         HeaderInstallationReport.Name = "HeaderInstallationReport"
         HeaderInstallationReport.Size = New Size(179, 28)
@@ -134,7 +137,7 @@ Partial Class installationview
         ' 
         ComboBox3.BackColor = SystemColors.ButtonFace
         ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox3.Font = New Font("Segoe UI", 14F)
+        ComboBox3.Font = New Font("Segoe UI", 14.0F)
         ComboBox3.ForeColor = SystemColors.WindowText
         ComboBox3.FormattingEnabled = True
         ComboBox3.Location = New Point(444, 104)
@@ -147,7 +150,7 @@ Partial Class installationview
         ' 
         ComboBox2.BackColor = SystemColors.ButtonFace
         ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox2.Font = New Font("Segoe UI", 14F)
+        ComboBox2.Font = New Font("Segoe UI", 14.0F)
         ComboBox2.ForeColor = SystemColors.WindowText
         ComboBox2.FormattingEnabled = True
         ComboBox2.Location = New Point(234, 104)
@@ -160,7 +163,7 @@ Partial Class installationview
         ' 
         ComboBox1.BackColor = SystemColors.ButtonFace
         ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
-        ComboBox1.Font = New Font("Segoe UI", 14F)
+        ComboBox1.Font = New Font("Segoe UI", 14.0F)
         ComboBox1.ForeColor = SystemColors.WindowText
         ComboBox1.FormattingEnabled = True
         ComboBox1.Location = New Point(24, 104)
@@ -172,7 +175,7 @@ Partial Class installationview
         ' LabelStatus
         ' 
         LabelStatus.AutoSize = True
-        LabelStatus.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LabelStatus.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LabelStatus.Location = New Point(444, 80)
         LabelStatus.Name = "LabelStatus"
         LabelStatus.Size = New Size(55, 21)
@@ -182,7 +185,7 @@ Partial Class installationview
         ' LabelTechnician
         ' 
         LabelTechnician.AutoSize = True
-        LabelTechnician.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LabelTechnician.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LabelTechnician.Location = New Point(234, 80)
         LabelTechnician.Name = "LabelTechnician"
         LabelTechnician.Size = New Size(85, 21)
@@ -192,7 +195,7 @@ Partial Class installationview
         ' LabelDateRange
         ' 
         LabelDateRange.AutoSize = True
-        LabelDateRange.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LabelDateRange.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         LabelDateRange.Location = New Point(22, 80)
         LabelDateRange.Name = "LabelDateRange"
         LabelDateRange.Size = New Size(94, 21)
@@ -202,7 +205,7 @@ Partial Class installationview
         ' LabelFilters
         ' 
         LabelFilters.AutoSize = True
-        LabelFilters.Font = New Font("Verdana", 12F)
+        LabelFilters.Font = New Font("Verdana", 12.0F)
         LabelFilters.Location = New Point(51, 23)
         LabelFilters.Name = "LabelFilters"
         LabelFilters.Size = New Size(59, 18)
@@ -211,7 +214,7 @@ Partial Class installationview
         ' 
         ' IconFilter
         ' 
-        IconFilter.Image = My.Resources.Resources.filter
+        IconFilter.Image = CType(resources.GetObject("IconFilter.Image"), Image)
         IconFilter.Location = New Point(22, 19)
         IconFilter.Name = "IconFilter"
         IconFilter.Size = New Size(24, 24)
@@ -233,7 +236,7 @@ Partial Class installationview
         ' 
         ' IconTotalInstallations
         ' 
-        IconTotalInstallations.Image = My.Resources.Resources.BLueWrench
+        IconTotalInstallations.Image = CType(resources.GetObject("IconTotalInstallations.Image"), Image)
         IconTotalInstallations.Location = New Point(286, 36)
         IconTotalInstallations.Name = "IconTotalInstallations"
         IconTotalInstallations.Size = New Size(48, 50)
@@ -244,7 +247,7 @@ Partial Class installationview
         ' NumTotalInstallations
         ' 
         NumTotalInstallations.AutoSize = True
-        NumTotalInstallations.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
+        NumTotalInstallations.Font = New Font("Segoe UI Semibold", 16.0F, FontStyle.Bold)
         NumTotalInstallations.Location = New Point(24, 66)
         NumTotalInstallations.Name = "NumTotalInstallations"
         NumTotalInstallations.Size = New Size(37, 30)
@@ -254,7 +257,7 @@ Partial Class installationview
         ' LabelTotalInstallations
         ' 
         LabelTotalInstallations.AutoSize = True
-        LabelTotalInstallations.Font = New Font("Verdana", 12F)
+        LabelTotalInstallations.Font = New Font("Verdana", 12.0F)
         LabelTotalInstallations.ForeColor = SystemColors.ControlDarkDark
         LabelTotalInstallations.Location = New Point(24, 25)
         LabelTotalInstallations.Name = "LabelTotalInstallations"
@@ -276,7 +279,7 @@ Partial Class installationview
         ' 
         ' IconComplete
         ' 
-        IconComplete.Image = My.Resources.Resources.greenCompleted
+        IconComplete.Image = CType(resources.GetObject("IconComplete.Image"), Image)
         IconComplete.Location = New Point(286, 36)
         IconComplete.Name = "IconComplete"
         IconComplete.Size = New Size(48, 50)
@@ -287,7 +290,7 @@ Partial Class installationview
         ' NumCompleted
         ' 
         NumCompleted.AutoSize = True
-        NumCompleted.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
+        NumCompleted.Font = New Font("Segoe UI Semibold", 16.0F, FontStyle.Bold)
         NumCompleted.Location = New Point(24, 66)
         NumCompleted.Name = "NumCompleted"
         NumCompleted.Size = New Size(37, 30)
@@ -297,7 +300,7 @@ Partial Class installationview
         ' LabelCompleted
         ' 
         LabelCompleted.AutoSize = True
-        LabelCompleted.Font = New Font("Verdana", 12F)
+        LabelCompleted.Font = New Font("Verdana", 12.0F)
         LabelCompleted.ForeColor = SystemColors.ControlDarkDark
         LabelCompleted.Location = New Point(24, 25)
         LabelCompleted.Name = "LabelCompleted"
@@ -319,7 +322,7 @@ Partial Class installationview
         ' 
         ' IconInProgress
         ' 
-        IconInProgress.Image = My.Resources.Resources.redInProgress
+        IconInProgress.Image = CType(resources.GetObject("IconInProgress.Image"), Image)
         IconInProgress.Location = New Point(286, 36)
         IconInProgress.Name = "IconInProgress"
         IconInProgress.Size = New Size(48, 50)
@@ -330,7 +333,7 @@ Partial Class installationview
         ' NumInProgress
         ' 
         NumInProgress.AutoSize = True
-        NumInProgress.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
+        NumInProgress.Font = New Font("Segoe UI Semibold", 16.0F, FontStyle.Bold)
         NumInProgress.Location = New Point(24, 66)
         NumInProgress.Name = "NumInProgress"
         NumInProgress.Size = New Size(37, 30)
@@ -340,7 +343,7 @@ Partial Class installationview
         ' LabelInProgress
         ' 
         LabelInProgress.AutoSize = True
-        LabelInProgress.Font = New Font("Verdana", 12F)
+        LabelInProgress.Font = New Font("Verdana", 12.0F)
         LabelInProgress.ForeColor = SystemColors.ControlDarkDark
         LabelInProgress.Location = New Point(24, 25)
         LabelInProgress.Name = "LabelInProgress"
@@ -362,7 +365,7 @@ Partial Class installationview
         ' 
         ' IconPending
         ' 
-        IconPending.Image = My.Resources.Resources.orangePending
+        IconPending.Image = CType(resources.GetObject("IconPending.Image"), Image)
         IconPending.Location = New Point(286, 36)
         IconPending.Name = "IconPending"
         IconPending.Size = New Size(48, 50)
@@ -373,7 +376,7 @@ Partial Class installationview
         ' NumPending
         ' 
         NumPending.AutoSize = True
-        NumPending.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
+        NumPending.Font = New Font("Segoe UI Semibold", 16.0F, FontStyle.Bold)
         NumPending.Location = New Point(24, 66)
         NumPending.Name = "NumPending"
         NumPending.Size = New Size(37, 30)
@@ -383,7 +386,7 @@ Partial Class installationview
         ' LabelPending
         ' 
         LabelPending.AutoSize = True
-        LabelPending.Font = New Font("Verdana", 12F)
+        LabelPending.Font = New Font("Verdana", 12.0F)
         LabelPending.ForeColor = SystemColors.ControlDarkDark
         LabelPending.Location = New Point(24, 25)
         LabelPending.Name = "LabelPending"
@@ -395,6 +398,7 @@ Partial Class installationview
         ' 
         PanelSubscribersPlan.Anchor = AnchorStyles.Top
         PanelSubscribersPlan.BackColor = Color.White
+        PanelSubscribersPlan.Controls.Add(Panel1)
         PanelSubscribersPlan.Controls.Add(LabelInstallationStatusDistribution)
         PanelSubscribersPlan.Controls.Add(PnlCancelled)
         PanelSubscribersPlan.Controls.Add(PnlPending)
@@ -406,10 +410,17 @@ Partial Class installationview
         PanelSubscribersPlan.Size = New Size(1595, 504)
         PanelSubscribersPlan.TabIndex = 10
         ' 
+        ' Panel1
+        ' 
+        Panel1.Location = New Point(24, 47)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(634, 434)
+        Panel1.TabIndex = 23
+        ' 
         ' LabelInstallationStatusDistribution
         ' 
         LabelInstallationStatusDistribution.AutoSize = True
-        LabelInstallationStatusDistribution.Font = New Font("Verdana", 12F)
+        LabelInstallationStatusDistribution.Font = New Font("Verdana", 12.0F)
         LabelInstallationStatusDistribution.ForeColor = SystemColors.ControlDarkDark
         LabelInstallationStatusDistribution.Location = New Point(24, 25)
         LabelInstallationStatusDistribution.Name = "LabelInstallationStatusDistribution"
@@ -435,7 +446,7 @@ Partial Class installationview
         ' 
         PercentCancelled.Anchor = AnchorStyles.Top
         PercentCancelled.AutoSize = True
-        PercentCancelled.Font = New Font("Segoe UI Semibold", 12F)
+        PercentCancelled.Font = New Font("Segoe UI Semibold", 12.0F)
         PercentCancelled.ForeColor = Color.Black
         PercentCancelled.Location = New Point(789, 27)
         PercentCancelled.Name = "PercentCancelled"
@@ -447,7 +458,7 @@ Partial Class installationview
         ' 
         Cancelled.Anchor = AnchorStyles.Top
         Cancelled.AutoSize = True
-        Cancelled.Font = New Font("Segoe UI", 11F)
+        Cancelled.Font = New Font("Segoe UI", 11.0F)
         Cancelled.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
         Cancelled.Location = New Point(46, 28)
         Cancelled.Name = "Cancelled"
@@ -458,7 +469,7 @@ Partial Class installationview
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top
-        PictureBox1.Image = My.Resources.Resources.redDot
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(28, 32)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(12, 12)
@@ -484,7 +495,7 @@ Partial Class installationview
         ' 
         Pending.Anchor = AnchorStyles.Top
         Pending.AutoSize = True
-        Pending.Font = New Font("Segoe UI", 11F)
+        Pending.Font = New Font("Segoe UI", 11.0F)
         Pending.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
         Pending.Location = New Point(46, 28)
         Pending.Name = "Pending"
@@ -496,7 +507,7 @@ Partial Class installationview
         ' 
         PercentPending.Anchor = AnchorStyles.Top
         PercentPending.AutoSize = True
-        PercentPending.Font = New Font("Segoe UI Semibold", 12F)
+        PercentPending.Font = New Font("Segoe UI Semibold", 12.0F)
         PercentPending.ForeColor = Color.Black
         PercentPending.Location = New Point(789, 27)
         PercentPending.Name = "PercentPending"
@@ -507,7 +518,7 @@ Partial Class installationview
         ' PictureBox5
         ' 
         PictureBox5.Anchor = AnchorStyles.Top
-        PictureBox5.Image = My.Resources.Resources.EcstacyDot
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
         PictureBox5.Location = New Point(28, 32)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(12, 12)
@@ -533,7 +544,7 @@ Partial Class installationview
         ' 
         InProgress.Anchor = AnchorStyles.Top
         InProgress.AutoSize = True
-        InProgress.Font = New Font("Segoe UI", 11F)
+        InProgress.Font = New Font("Segoe UI", 11.0F)
         InProgress.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
         InProgress.Location = New Point(46, 28)
         InProgress.Name = "InProgress"
@@ -544,7 +555,7 @@ Partial Class installationview
         ' PictureBox4
         ' 
         PictureBox4.Anchor = AnchorStyles.Top
-        PictureBox4.Image = My.Resources.Resources.ButtercupDot
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
         PictureBox4.Location = New Point(28, 32)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(12, 12)
@@ -556,7 +567,7 @@ Partial Class installationview
         ' 
         PercentInProgress.Anchor = AnchorStyles.Top
         PercentInProgress.AutoSize = True
-        PercentInProgress.Font = New Font("Segoe UI Semibold", 12F)
+        PercentInProgress.Font = New Font("Segoe UI Semibold", 12.0F)
         PercentInProgress.ForeColor = Color.Black
         PercentInProgress.Location = New Point(789, 27)
         PercentInProgress.Name = "PercentInProgress"
@@ -582,7 +593,7 @@ Partial Class installationview
         ' 
         Completed.Anchor = AnchorStyles.Top
         Completed.AutoSize = True
-        Completed.Font = New Font("Segoe UI", 11F)
+        Completed.Font = New Font("Segoe UI", 11.0F)
         Completed.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
         Completed.Location = New Point(46, 28)
         Completed.Name = "Completed"
@@ -593,7 +604,7 @@ Partial Class installationview
         ' PictureBox6
         ' 
         PictureBox6.Anchor = AnchorStyles.Top
-        PictureBox6.Image = My.Resources.Resources.greenDot
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
         PictureBox6.Location = New Point(28, 32)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(12, 12)
@@ -605,7 +616,7 @@ Partial Class installationview
         ' 
         PercentComplete.Anchor = AnchorStyles.Top
         PercentComplete.AutoSize = True
-        PercentComplete.Font = New Font("Segoe UI Semibold", 12F)
+        PercentComplete.Font = New Font("Segoe UI Semibold", 12.0F)
         PercentComplete.ForeColor = Color.Black
         PercentComplete.Location = New Point(789, 27)
         PercentComplete.Name = "PercentComplete"
@@ -625,7 +636,7 @@ Partial Class installationview
         DataGridInstallationDetails.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = Color.White
-        DataGridViewCellStyle2.Font = New Font("Verdana", 10F)
+        DataGridViewCellStyle2.Font = New Font("Verdana", 10.0F)
         DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
@@ -703,6 +714,7 @@ Partial Class installationview
         ' PanelInstallationDetails
         ' 
         PanelInstallationDetails.BackColor = Color.White
+        PanelInstallationDetails.Controls.Add(TableLayoutPanel1)
         PanelInstallationDetails.Controls.Add(LabelInstallationDetails)
         PanelInstallationDetails.Controls.Add(DataGridInstallationDetails)
         PanelInstallationDetails.CornerRadius = 12
@@ -711,10 +723,29 @@ Partial Class installationview
         PanelInstallationDetails.Size = New Size(1595, 504)
         PanelInstallationDetails.TabIndex = 17
         ' 
+        ' TableLayoutPanel1
+        ' 
+        TableLayoutPanel1.ColumnCount = 7
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 149.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 203.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 196.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 338.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 210.0F))
+        TableLayoutPanel1.Location = New Point(24, 104)
+        TableLayoutPanel1.Name = "TableLayoutPanel1"
+        TableLayoutPanel1.RowCount = 3
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 121.0F))
+        TableLayoutPanel1.Size = New Size(1396, 385)
+        TableLayoutPanel1.TabIndex = 25
+        ' 
         ' LabelInstallationDetails
         ' 
         LabelInstallationDetails.AutoSize = True
-        LabelInstallationDetails.Font = New Font("Verdana", 12F)
+        LabelInstallationDetails.Font = New Font("Verdana", 12.0F)
         LabelInstallationDetails.ForeColor = SystemColors.ControlDarkDark
         LabelInstallationDetails.Location = New Point(24, 25)
         LabelInstallationDetails.Name = "LabelInstallationDetails"
@@ -724,7 +755,7 @@ Partial Class installationview
         ' 
         ' installationview
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         BackColor = SystemColors.ButtonFace
@@ -829,5 +860,9 @@ Partial Class installationview
     Friend WithEvents Status As DataGridViewTextBoxColumn
     Friend WithEvents EditDelete As DataGridViewTextBoxColumn
     Friend WithEvents LabelInstallationDetails As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelRound2 As PanelRound
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 
 End Class
+

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class NewPassword
     Inherits System.Windows.Forms.UserControl
 
@@ -329,7 +329,7 @@ Partial Class NewPassword
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        logo.Image = My.Resources.Resources.SparxLogo2
+        logo.Image = My.Resources.SparxLogo2
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(73, 50)
@@ -379,3 +379,4 @@ Partial Class NewPassword
     Friend WithEvents ButtonRounded4 As ButtonRounded
 
 End Class
+

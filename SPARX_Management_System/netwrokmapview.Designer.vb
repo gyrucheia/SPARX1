@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class netwrokmapview
     Inherits System.Windows.Forms.UserControl
 
@@ -16,34 +16,19 @@ Partial Class netwrokmapview
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents InventoryFilterPanel As PanelRound
+    Friend WithEvents ItemSearchTxtBox As TextBox
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ReorderLbl As Label
+    Friend WithEvents StatusLbl As Label
+    Friend WithEvents LocationLbl As Label
+    Friend WithEvents LabelFilters As Label
+    Friend WithEvents IconFilter As PictureBox
+    Friend WithEvents btnExport As ButtonRounded
+    Friend WithEvents LblSalesReport As Label
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
-    Private Sub InitializeComponent()
-        Label1 = New Label()
-        SuspendLayout()
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(25, 13)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(205, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "SANAOL DALWA WIFI, DIBA LYZETTE?"
-        ' 
-        ' netwrokmapview
-        ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
-        AutoScaleMode = AutoScaleMode.Font
-        Controls.Add(Label1)
-        Name = "netwrokmapview"
-        ResumeLayout(False)
-        PerformLayout()
-    End Sub
-
-    Friend WithEvents Label1 As Label
 
 End Class
+

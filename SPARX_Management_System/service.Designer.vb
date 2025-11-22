@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class service
     Inherits System.Windows.Forms.UserControl
 
@@ -48,3 +48,4 @@ Partial Class service
     Friend WithEvents Label1 As Label
 
 End Class
+

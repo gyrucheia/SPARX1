@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class dashboardSuperAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class dashboardSuperAdmin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardSuperAdmin))
         pnlHeader = New Panel()
@@ -77,7 +77,7 @@ Partial Class dashboardSuperAdmin
         ' PictureBox4
         ' 
         PictureBox4.Anchor = AnchorStyles.Top
-        PictureBox4.Image = My.Resources.Resources.redDot
+        PictureBox4.Image = My.Resources.redDot
         PictureBox4.Location = New Point(1721, 20)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(12, 10)
@@ -99,7 +99,7 @@ Partial Class dashboardSuperAdmin
         ' 
         ' PictureBox3
         ' 
-        PictureBox3.Image = My.Resources.Resources.greenDot
+        PictureBox3.Image = My.Resources.greenDot
         PictureBox3.Location = New Point(6, 11)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(12, 10)
@@ -120,7 +120,7 @@ Partial Class dashboardSuperAdmin
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top
-        PictureBox1.Image = My.Resources.Resources.notificationBell
+        PictureBox1.Image = My.Resources.notificationBell
         PictureBox1.Location = New Point(1707, 23)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(24, 24)
@@ -159,7 +159,6 @@ Partial Class dashboardSuperAdmin
         ' 
         ' pnlMenu
         ' 
-        pnlMenu.AutoScroll = True
         pnlMenu.AutoScrollMargin = New Size(10, 0)
         pnlMenu.AutoScrollMinSize = New Size(10, 0)
         pnlMenu.BackColor = Color.FromArgb(CByte(29), CByte(41), CByte(61))
@@ -228,7 +227,7 @@ Partial Class dashboardSuperAdmin
         PlansBtn.FlatAppearance.BorderSize = 0
         PlansBtn.FlatStyle = FlatStyle.Flat
         PlansBtn.ForeColor = Color.Transparent
-        PlansBtn.Image = My.Resources.Resources.plan
+        PlansBtn.Image = My.Resources.plan
         PlansBtn.ImageAlign = ContentAlignment.MiddleLeft
         PlansBtn.Location = New Point(0, 514)
         PlansBtn.Margin = New Padding(3, 2, 3, 2)
@@ -247,7 +246,7 @@ Partial Class dashboardSuperAdmin
         HistoryBtn.FlatAppearance.BorderSize = 0
         HistoryBtn.FlatStyle = FlatStyle.Flat
         HistoryBtn.ForeColor = Color.Transparent
-        HistoryBtn.Image = My.Resources.Resources.history
+        HistoryBtn.Image = My.Resources.history
         HistoryBtn.ImageAlign = ContentAlignment.MiddleLeft
         HistoryBtn.Location = New Point(-3, 471)
         HistoryBtn.Margin = New Padding(3, 2, 3, 2)
@@ -266,7 +265,7 @@ Partial Class dashboardSuperAdmin
         NetworkMapBtn.FlatAppearance.BorderSize = 0
         NetworkMapBtn.FlatStyle = FlatStyle.Flat
         NetworkMapBtn.ForeColor = Color.Transparent
-        NetworkMapBtn.Image = My.Resources.Resources.networkMap
+        NetworkMapBtn.Image = My.Resources.networkMap
         NetworkMapBtn.ImageAlign = ContentAlignment.MiddleLeft
         NetworkMapBtn.Location = New Point(0, 428)
         NetworkMapBtn.Margin = New Padding(3, 2, 3, 2)
@@ -285,7 +284,7 @@ Partial Class dashboardSuperAdmin
         BillingBtn.FlatAppearance.BorderSize = 0
         BillingBtn.FlatStyle = FlatStyle.Flat
         BillingBtn.ForeColor = Color.Transparent
-        BillingBtn.Image = My.Resources.Resources.billing
+        BillingBtn.Image = My.Resources.billing
         BillingBtn.ImageAlign = ContentAlignment.MiddleLeft
         BillingBtn.Location = New Point(0, 384)
         BillingBtn.Margin = New Padding(3, 2, 3, 2)
@@ -304,7 +303,7 @@ Partial Class dashboardSuperAdmin
         SubscriberBtn.FlatAppearance.BorderSize = 0
         SubscriberBtn.FlatStyle = FlatStyle.Flat
         SubscriberBtn.ForeColor = Color.Transparent
-        SubscriberBtn.Image = My.Resources.Resources.subscriber
+        SubscriberBtn.Image = My.Resources.subscriber
         SubscriberBtn.ImageAlign = ContentAlignment.MiddleLeft
         SubscriberBtn.Location = New Point(0, 340)
         SubscriberBtn.Margin = New Padding(3, 2, 3, 2)
@@ -323,7 +322,7 @@ Partial Class dashboardSuperAdmin
         PayrollBtn.FlatAppearance.BorderSize = 0
         PayrollBtn.FlatStyle = FlatStyle.Flat
         PayrollBtn.ForeColor = Color.Transparent
-        PayrollBtn.Image = My.Resources.Resources.payroll
+        PayrollBtn.Image = My.Resources.payroll
         PayrollBtn.ImageAlign = ContentAlignment.MiddleLeft
         PayrollBtn.Location = New Point(0, 290)
         PayrollBtn.Margin = New Padding(3, 2, 3, 2)
@@ -342,7 +341,7 @@ Partial Class dashboardSuperAdmin
         InventoryBtn.FlatAppearance.BorderSize = 0
         InventoryBtn.FlatStyle = FlatStyle.Flat
         InventoryBtn.ForeColor = Color.Transparent
-        InventoryBtn.Image = My.Resources.Resources.inventory
+        InventoryBtn.Image = My.Resources.inventory
         InventoryBtn.ImageAlign = ContentAlignment.MiddleLeft
         InventoryBtn.Location = New Point(0, 246)
         InventoryBtn.Margin = New Padding(3, 2, 3, 2)
@@ -361,7 +360,7 @@ Partial Class dashboardSuperAdmin
         ServiceBtn.FlatAppearance.BorderSize = 0
         ServiceBtn.FlatStyle = FlatStyle.Flat
         ServiceBtn.ForeColor = Color.Transparent
-        ServiceBtn.Image = My.Resources.Resources.service
+        ServiceBtn.Image = My.Resources.service
         ServiceBtn.ImageAlign = ContentAlignment.MiddleLeft
         ServiceBtn.Location = New Point(0, 202)
         ServiceBtn.Margin = New Padding(3, 2, 3, 2)
@@ -380,7 +379,7 @@ Partial Class dashboardSuperAdmin
         InstallationBtn.FlatAppearance.BorderSize = 0
         InstallationBtn.FlatStyle = FlatStyle.Flat
         InstallationBtn.ForeColor = Color.Transparent
-        InstallationBtn.Image = My.Resources.Resources.installation
+        InstallationBtn.Image = My.Resources.installation
         InstallationBtn.ImageAlign = ContentAlignment.MiddleLeft
         InstallationBtn.Location = New Point(0, 159)
         InstallationBtn.Margin = New Padding(3, 2, 3, 2)
@@ -398,7 +397,7 @@ Partial Class dashboardSuperAdmin
         SalesBtn.FlatAppearance.BorderSize = 0
         SalesBtn.FlatStyle = FlatStyle.Flat
         SalesBtn.ForeColor = Color.Transparent
-        SalesBtn.Image = My.Resources.Resources.sales
+        SalesBtn.Image = My.Resources.sales
         SalesBtn.ImageAlign = ContentAlignment.MiddleLeft
         SalesBtn.Location = New Point(0, 116)
         SalesBtn.Margin = New Padding(3, 2, 3, 2)
@@ -415,7 +414,7 @@ Partial Class dashboardSuperAdmin
         DashboardBtn.FlatAppearance.BorderSize = 0
         DashboardBtn.FlatStyle = FlatStyle.Flat
         DashboardBtn.ForeColor = Color.Transparent
-        DashboardBtn.Image = My.Resources.Resources.dashboard
+        DashboardBtn.Image = My.Resources.dashboard
         DashboardBtn.ImageAlign = ContentAlignment.MiddleLeft
         DashboardBtn.Location = New Point(0, 72)
         DashboardBtn.Margin = New Padding(3, 2, 3, 2)
@@ -440,7 +439,7 @@ Partial Class dashboardSuperAdmin
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.Image = My.Resources.Resources.SparxFiber
+        PictureBox2.Image = My.Resources.SparxFiber
         PictureBox2.Location = New Point(41, 12)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(117, 55)
@@ -514,3 +513,4 @@ Partial Class dashboardSuperAdmin
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
 End Class
+

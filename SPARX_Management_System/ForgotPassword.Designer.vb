@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ForgotPassword
     Inherits System.Windows.Forms.UserControl
 
@@ -267,7 +267,7 @@ Partial Class ForgotPassword
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        PictureBox1.Image = My.Resources.Resources.SparxLogo2
+        PictureBox1.Image = My.Resources.SparxLogo2
         PictureBox1.Location = New Point(226, 35)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(73, 50)
@@ -313,3 +313,4 @@ Partial Class ForgotPassword
     Friend WithEvents PictureBox1 As PictureBox
 
 End Class
+

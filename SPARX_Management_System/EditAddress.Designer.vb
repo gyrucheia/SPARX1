@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class EditAddress
     Inherits System.Windows.Forms.Form
 
@@ -245,3 +245,4 @@ Partial Class EditAddress
     Friend WithEvents Line3 As Label
     Friend WithEvents EditLbl As Label
 End Class
+

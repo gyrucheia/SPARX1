@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class plansview
     Inherits System.Windows.Forms.UserControl
 
@@ -47,3 +47,4 @@ Partial Class plansview
     Friend WithEvents Label1 As Label
 
 End Class
+

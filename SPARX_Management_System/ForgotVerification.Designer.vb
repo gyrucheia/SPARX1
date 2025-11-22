@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ForgotVerification
     Inherits System.Windows.Forms.UserControl
 
@@ -347,7 +347,7 @@ Partial Class ForgotVerification
         ' 
         ' logo
         ' 
-        logo.Image = My.Resources.Resources.SparxLogo2
+        logo.Image = My.Resources.SparxLogo2
         logo.Location = New Point(226, 35)
         logo.Name = "logo"
         logo.Size = New Size(73, 50)
@@ -408,3 +408,4 @@ Partial Class ForgotVerification
     Friend WithEvents Verifycode As TextBox
 
 End Class
+

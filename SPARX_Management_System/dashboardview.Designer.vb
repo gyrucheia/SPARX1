@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class dashboardview
     Inherits System.Windows.Forms.UserControl
 
@@ -22,6 +22,7 @@ Partial Class dashboardview
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardview))
         LabelSubscribersPlan = New Label()
         PanelRound7 = New PanelRound()
         PercentBasic = New Label()
@@ -45,6 +46,8 @@ Partial Class dashboardview
         LabelPremium = New Label()
         PictureBox5 = New PictureBox()
         PanelSubscribersPlan = New PanelRound()
+        Panel4 = New Panel()
+        Label5 = New Label()
         ServiceStatusDistribution = New Label()
         GreenDotComplete = New PictureBox()
         LabelComplete = New Label()
@@ -56,8 +59,10 @@ Partial Class dashboardview
         Label2 = New Label()
         Label3 = New Label()
         PanelRound6 = New PanelRound()
+        Panel2 = New Panel()
         SubscribersGrowth = New Label()
         PanelRound5 = New PanelRound()
+        Panel1 = New Panel()
         LabelPendingService = New Label()
         PendingService = New PictureBox()
         AmountPendingServices = New Label()
@@ -111,6 +116,7 @@ Partial Class dashboardview
         LabelLowStockInventory = New Label()
         PictureBox7 = New PictureBox()
         LabelSystemAlert = New Label()
+        Panel3 = New Panel()
         PanelRound7.SuspendLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         PanelRound8.SuspendLayout()
@@ -118,6 +124,7 @@ Partial Class dashboardview
         PanelRound9.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         PanelSubscribersPlan.SuspendLayout()
+        Panel4.SuspendLayout()
         CType(GreenDotComplete, ComponentModel.ISupportInitialize).BeginInit()
         CType(OrangeDotProgress, ComponentModel.ISupportInitialize).BeginInit()
         CType(OrangePending, ComponentModel.ISupportInitialize).BeginInit()
@@ -149,7 +156,7 @@ Partial Class dashboardview
         ' 
         LabelSubscribersPlan.Anchor = AnchorStyles.Top
         LabelSubscribersPlan.AutoSize = True
-        LabelSubscribersPlan.Font = New Font("Verdana", 13F)
+        LabelSubscribersPlan.Font = New Font("Verdana", 13.0F)
         LabelSubscribersPlan.ForeColor = Color.Black
         LabelSubscribersPlan.Location = New Point(23, 15)
         LabelSubscribersPlan.Name = "LabelSubscribersPlan"
@@ -169,18 +176,18 @@ Partial Class dashboardview
         PanelRound7.Controls.Add(PictureBox6)
         PanelRound7.CornerRadius = 12
         PanelRound7.ForeColor = SystemColors.ControlText
-        PanelRound7.Location = New Point(697, 99)
+        PanelRound7.Location = New Point(819, 72)
         PanelRound7.Name = "PanelRound7"
-        PanelRound7.Size = New Size(861, 74)
+        PanelRound7.Size = New Size(739, 76)
         PanelRound7.TabIndex = 12
         ' 
         ' PercentBasic
         ' 
         PercentBasic.Anchor = AnchorStyles.Top
         PercentBasic.AutoSize = True
-        PercentBasic.Font = New Font("Segoe UI", 11F)
+        PercentBasic.Font = New Font("Segoe UI", 11.0F)
         PercentBasic.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
-        PercentBasic.Location = New Point(745, 41)
+        PercentBasic.Location = New Point(620, 41)
         PercentBasic.Name = "PercentBasic"
         PercentBasic.Size = New Size(37, 20)
         PercentBasic.TabIndex = 23
@@ -190,9 +197,9 @@ Partial Class dashboardview
         ' 
         BasicTotal.Anchor = AnchorStyles.Top
         BasicTotal.AutoSize = True
-        BasicTotal.Font = New Font("Segoe UI", 11F)
+        BasicTotal.Font = New Font("Segoe UI", 11.0F)
         BasicTotal.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
-        BasicTotal.Location = New Point(785, 41)
+        BasicTotal.Location = New Point(663, 41)
         BasicTotal.Name = "BasicTotal"
         BasicTotal.Size = New Size(58, 20)
         BasicTotal.TabIndex = 20
@@ -202,9 +209,9 @@ Partial Class dashboardview
         ' 
         AmountBasic.Anchor = AnchorStyles.Top
         AmountBasic.AutoSize = True
-        AmountBasic.Font = New Font("Segoe UI", 11F)
+        AmountBasic.Font = New Font("Segoe UI", 11.0F)
         AmountBasic.ForeColor = Color.Black
-        AmountBasic.Location = New Point(722, 16)
+        AmountBasic.Location = New Point(609, 16)
         AmountBasic.Name = "AmountBasic"
         AmountBasic.Size = New Size(25, 20)
         AmountBasic.TabIndex = 22
@@ -214,9 +221,9 @@ Partial Class dashboardview
         ' 
         BasicSubscribers.Anchor = AnchorStyles.Top
         BasicSubscribers.AutoSize = True
-        BasicSubscribers.Font = New Font("Segoe UI", 11F)
+        BasicSubscribers.Font = New Font("Segoe UI", 11.0F)
         BasicSubscribers.ForeColor = Color.Black
-        BasicSubscribers.Location = New Point(760, 16)
+        BasicSubscribers.Location = New Point(652, 16)
         BasicSubscribers.Name = "BasicSubscribers"
         BasicSubscribers.Size = New Size(84, 20)
         BasicSubscribers.TabIndex = 15
@@ -226,9 +233,9 @@ Partial Class dashboardview
         ' 
         LabelBasic.Anchor = AnchorStyles.Top
         LabelBasic.AutoSize = True
-        LabelBasic.Font = New Font("Segoe UI", 11F)
+        LabelBasic.Font = New Font("Segoe UI", 11.0F)
         LabelBasic.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
-        LabelBasic.Location = New Point(30, 29)
+        LabelBasic.Location = New Point(59, 33)
         LabelBasic.Name = "LabelBasic"
         LabelBasic.Size = New Size(100, 20)
         LabelBasic.TabIndex = 20
@@ -237,8 +244,8 @@ Partial Class dashboardview
         ' PictureBox6
         ' 
         PictureBox6.Anchor = AnchorStyles.Top
-        PictureBox6.Image = My.Resources.Resources.BlueDot
-        PictureBox6.Location = New Point(12, 33)
+        PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), Image)
+        PictureBox6.Location = New Point(28, 41)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(12, 12)
         PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
@@ -257,18 +264,18 @@ Partial Class dashboardview
         PanelRound8.Controls.Add(StandardSubscribers)
         PanelRound8.CornerRadius = 12
         PanelRound8.ForeColor = SystemColors.ControlText
-        PanelRound8.Location = New Point(697, 196)
+        PanelRound8.Location = New Point(0, 133)
         PanelRound8.Name = "PanelRound8"
-        PanelRound8.Size = New Size(861, 74)
+        PanelRound8.Size = New Size(739, 74)
         PanelRound8.TabIndex = 13
         ' 
         ' PercentStandard
         ' 
         PercentStandard.Anchor = AnchorStyles.Top
         PercentStandard.AutoSize = True
-        PercentStandard.Font = New Font("Segoe UI", 11F)
+        PercentStandard.Font = New Font("Segoe UI", 11.0F)
         PercentStandard.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
-        PercentStandard.Location = New Point(741, 44)
+        PercentStandard.Location = New Point(620, 44)
         PercentStandard.Name = "PercentStandard"
         PercentStandard.Size = New Size(37, 20)
         PercentStandard.TabIndex = 27
@@ -278,9 +285,9 @@ Partial Class dashboardview
         ' 
         LabelStandard.Anchor = AnchorStyles.Top
         LabelStandard.AutoSize = True
-        LabelStandard.Font = New Font("Segoe UI", 11F)
+        LabelStandard.Font = New Font("Segoe UI", 11.0F)
         LabelStandard.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
-        LabelStandard.Location = New Point(30, 28)
+        LabelStandard.Location = New Point(59, 27)
         LabelStandard.Name = "LabelStandard"
         LabelStandard.Size = New Size(126, 20)
         LabelStandard.TabIndex = 22
@@ -290,9 +297,9 @@ Partial Class dashboardview
         ' 
         TotalStandard.Anchor = AnchorStyles.Top
         TotalStandard.AutoSize = True
-        TotalStandard.Font = New Font("Segoe UI", 11F)
+        TotalStandard.Font = New Font("Segoe UI", 11.0F)
         TotalStandard.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
-        TotalStandard.Location = New Point(785, 44)
+        TotalStandard.Location = New Point(665, 44)
         TotalStandard.Name = "TotalStandard"
         TotalStandard.Size = New Size(58, 20)
         TotalStandard.TabIndex = 25
@@ -301,8 +308,8 @@ Partial Class dashboardview
         ' PictureBox4
         ' 
         PictureBox4.Anchor = AnchorStyles.Top
-        PictureBox4.Image = My.Resources.Resources.ButtercupDot
-        PictureBox4.Location = New Point(12, 32)
+        PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
+        PictureBox4.Location = New Point(28, 35)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(12, 12)
         PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
@@ -313,9 +320,9 @@ Partial Class dashboardview
         ' 
         AmountStandard.Anchor = AnchorStyles.Top
         AmountStandard.AutoSize = True
-        AmountStandard.Font = New Font("Segoe UI", 11F)
+        AmountStandard.Font = New Font("Segoe UI", 11.0F)
         AmountStandard.ForeColor = Color.Black
-        AmountStandard.Location = New Point(723, 19)
+        AmountStandard.Location = New Point(609, 10)
         AmountStandard.Name = "AmountStandard"
         AmountStandard.Size = New Size(25, 20)
         AmountStandard.TabIndex = 26
@@ -325,9 +332,9 @@ Partial Class dashboardview
         ' 
         StandardSubscribers.Anchor = AnchorStyles.Top
         StandardSubscribers.AutoSize = True
-        StandardSubscribers.Font = New Font("Segoe UI", 11F)
+        StandardSubscribers.Font = New Font("Segoe UI", 11.0F)
         StandardSubscribers.ForeColor = Color.Black
-        StandardSubscribers.Location = New Point(760, 19)
+        StandardSubscribers.Location = New Point(652, 10)
         StandardSubscribers.Name = "StandardSubscribers"
         StandardSubscribers.Size = New Size(84, 20)
         StandardSubscribers.TabIndex = 24
@@ -345,18 +352,18 @@ Partial Class dashboardview
         PanelRound9.Controls.Add(PictureBox5)
         PanelRound9.CornerRadius = 12
         PanelRound9.ForeColor = SystemColors.ControlText
-        PanelRound9.Location = New Point(697, 292)
+        PanelRound9.Location = New Point(0, 263)
         PanelRound9.Name = "PanelRound9"
-        PanelRound9.Size = New Size(861, 74)
+        PanelRound9.Size = New Size(739, 74)
         PanelRound9.TabIndex = 14
         ' 
         ' PercentPremium
         ' 
         PercentPremium.Anchor = AnchorStyles.Top
         PercentPremium.AutoSize = True
-        PercentPremium.Font = New Font("Segoe UI", 11F)
+        PercentPremium.Font = New Font("Segoe UI", 11.0F)
         PercentPremium.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
-        PercentPremium.Location = New Point(745, 43)
+        PercentPremium.Location = New Point(620, 43)
         PercentPremium.Name = "PercentPremium"
         PercentPremium.Size = New Size(37, 20)
         PercentPremium.TabIndex = 27
@@ -366,9 +373,9 @@ Partial Class dashboardview
         ' 
         TotalPremium.Anchor = AnchorStyles.Top
         TotalPremium.AutoSize = True
-        TotalPremium.Font = New Font("Segoe UI", 11F)
+        TotalPremium.Font = New Font("Segoe UI", 11.0F)
         TotalPremium.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
-        TotalPremium.Location = New Point(785, 43)
+        TotalPremium.Location = New Point(665, 43)
         TotalPremium.Name = "TotalPremium"
         TotalPremium.Size = New Size(58, 20)
         TotalPremium.TabIndex = 25
@@ -378,9 +385,9 @@ Partial Class dashboardview
         ' 
         AmountPremium.Anchor = AnchorStyles.Top
         AmountPremium.AutoSize = True
-        AmountPremium.Font = New Font("Segoe UI", 11F)
+        AmountPremium.Font = New Font("Segoe UI", 11.0F)
         AmountPremium.ForeColor = Color.Black
-        AmountPremium.Location = New Point(723, 18)
+        AmountPremium.Location = New Point(609, 9)
         AmountPremium.Name = "AmountPremium"
         AmountPremium.Size = New Size(25, 20)
         AmountPremium.TabIndex = 26
@@ -390,9 +397,9 @@ Partial Class dashboardview
         ' 
         PremiumSubscribers.Anchor = AnchorStyles.Top
         PremiumSubscribers.AutoSize = True
-        PremiumSubscribers.Font = New Font("Segoe UI", 11F)
+        PremiumSubscribers.Font = New Font("Segoe UI", 11.0F)
         PremiumSubscribers.ForeColor = Color.Black
-        PremiumSubscribers.Location = New Point(760, 18)
+        PremiumSubscribers.Location = New Point(652, 0)
         PremiumSubscribers.Name = "PremiumSubscribers"
         PremiumSubscribers.Size = New Size(84, 20)
         PremiumSubscribers.TabIndex = 24
@@ -402,9 +409,9 @@ Partial Class dashboardview
         ' 
         LabelPremium.Anchor = AnchorStyles.Top
         LabelPremium.AutoSize = True
-        LabelPremium.Font = New Font("Segoe UI", 11F)
+        LabelPremium.Font = New Font("Segoe UI", 11.0F)
         LabelPremium.ForeColor = Color.FromArgb(CByte(54), CByte(65), CByte(83))
-        LabelPremium.Location = New Point(30, 27)
+        LabelPremium.Location = New Point(59, 18)
         LabelPremium.Name = "LabelPremium"
         LabelPremium.Size = New Size(133, 20)
         LabelPremium.TabIndex = 21
@@ -413,8 +420,8 @@ Partial Class dashboardview
         ' PictureBox5
         ' 
         PictureBox5.Anchor = AnchorStyles.Top
-        PictureBox5.Image = My.Resources.Resources.greenDot
-        PictureBox5.Location = New Point(12, 31)
+        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
+        PictureBox5.Location = New Point(28, 26)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(12, 12)
         PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
@@ -425,31 +432,52 @@ Partial Class dashboardview
         ' 
         PanelSubscribersPlan.Anchor = AnchorStyles.Top
         PanelSubscribersPlan.BackColor = Color.White
-        PanelSubscribersPlan.Controls.Add(PanelRound9)
-        PanelSubscribersPlan.Controls.Add(PanelRound8)
         PanelSubscribersPlan.Controls.Add(PanelRound7)
+        PanelSubscribersPlan.Controls.Add(Panel4)
+        PanelSubscribersPlan.Controls.Add(Label5)
         PanelSubscribersPlan.CornerRadius = 12
         PanelSubscribersPlan.Location = New Point(200, 644)
         PanelSubscribersPlan.Name = "PanelSubscribersPlan"
         PanelSubscribersPlan.Size = New Size(1597, 481)
         PanelSubscribersPlan.TabIndex = 7
         ' 
+        ' Panel4
+        ' 
+        Panel4.Controls.Add(PanelRound8)
+        Panel4.Controls.Add(PanelRound9)
+        Panel4.Location = New Point(819, 42)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(739, 405)
+        Panel4.TabIndex = 16
+        ' 
+        ' Label5
+        ' 
+        Label5.Anchor = AnchorStyles.Top
+        Label5.AutoSize = True
+        Label5.Font = New Font("Verdana", 11.0F)
+        Label5.ForeColor = Color.Black
+        Label5.Location = New Point(27, 12)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(143, 18)
+        Label5.TabIndex = 12
+        Label5.Text = "Subscriber by Plan"
+        ' 
         ' ServiceStatusDistribution
         ' 
         ServiceStatusDistribution.Anchor = AnchorStyles.Top
         ServiceStatusDistribution.AutoSize = True
-        ServiceStatusDistribution.Font = New Font("Verdana", 11F)
+        ServiceStatusDistribution.Font = New Font("Verdana", 11.0F)
         ServiceStatusDistribution.ForeColor = Color.Black
         ServiceStatusDistribution.Location = New Point(28, 15)
         ServiceStatusDistribution.Name = "ServiceStatusDistribution"
-        ServiceStatusDistribution.Size = New Size(133, 18)
+        ServiceStatusDistribution.Size = New Size(203, 18)
         ServiceStatusDistribution.TabIndex = 11
-        ServiceStatusDistribution.Text = "Total Subscribers"
+        ServiceStatusDistribution.Text = "Service Status Distribution"
         ' 
         ' GreenDotComplete
         ' 
         GreenDotComplete.Anchor = AnchorStyles.Top
-        GreenDotComplete.Image = My.Resources.Resources.greenDot
+        GreenDotComplete.Image = CType(resources.GetObject("GreenDotComplete.Image"), Image)
         GreenDotComplete.Location = New Point(41, 364)
         GreenDotComplete.Name = "GreenDotComplete"
         GreenDotComplete.Size = New Size(12, 12)
@@ -461,7 +489,7 @@ Partial Class dashboardview
         ' 
         LabelComplete.Anchor = AnchorStyles.Top
         LabelComplete.AutoSize = True
-        LabelComplete.Font = New Font("Segoe UI", 11F)
+        LabelComplete.Font = New Font("Segoe UI", 11.0F)
         LabelComplete.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelComplete.Location = New Point(59, 361)
         LabelComplete.Name = "LabelComplete"
@@ -472,7 +500,7 @@ Partial Class dashboardview
         ' OrangeDotProgress
         ' 
         OrangeDotProgress.Anchor = AnchorStyles.Top
-        OrangeDotProgress.Image = My.Resources.Resources.ButtercupDot
+        OrangeDotProgress.Image = CType(resources.GetObject("OrangeDotProgress.Image"), Image)
         OrangeDotProgress.Location = New Point(322, 364)
         OrangeDotProgress.Name = "OrangeDotProgress"
         OrangeDotProgress.Size = New Size(12, 12)
@@ -484,7 +512,7 @@ Partial Class dashboardview
         ' 
         LabelProgress.Anchor = AnchorStyles.Top
         LabelProgress.AutoSize = True
-        LabelProgress.Font = New Font("Segoe UI", 11F)
+        LabelProgress.Font = New Font("Segoe UI", 11.0F)
         LabelProgress.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelProgress.Location = New Point(340, 361)
         LabelProgress.Name = "LabelProgress"
@@ -495,7 +523,7 @@ Partial Class dashboardview
         ' OrangePending
         ' 
         OrangePending.Anchor = AnchorStyles.Top
-        OrangePending.Image = My.Resources.Resources.EcstacyDot
+        OrangePending.Image = CType(resources.GetObject("OrangePending.Image"), Image)
         OrangePending.Location = New Point(609, 364)
         OrangePending.Name = "OrangePending"
         OrangePending.Size = New Size(12, 12)
@@ -507,7 +535,7 @@ Partial Class dashboardview
         ' 
         LblPending.Anchor = AnchorStyles.Top
         LblPending.AutoSize = True
-        LblPending.Font = New Font("Segoe UI", 11F)
+        LblPending.Font = New Font("Segoe UI", 11.0F)
         LblPending.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LblPending.Location = New Point(627, 361)
         LblPending.Name = "LblPending"
@@ -519,7 +547,7 @@ Partial Class dashboardview
         ' 
         Label1.Anchor = AnchorStyles.Top
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 11F)
+        Label1.Font = New Font("Segoe UI", 11.0F)
         Label1.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         Label1.Location = New Point(139, 361)
         Label1.Name = "Label1"
@@ -531,7 +559,7 @@ Partial Class dashboardview
         ' 
         Label2.Anchor = AnchorStyles.Top
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 11F)
+        Label2.Font = New Font("Segoe UI", 11.0F)
         Label2.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         Label2.Location = New Point(432, 361)
         Label2.Name = "Label2"
@@ -543,7 +571,7 @@ Partial Class dashboardview
         ' 
         Label3.Anchor = AnchorStyles.Top
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 11F)
+        Label3.Font = New Font("Segoe UI", 11.0F)
         Label3.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         Label3.Location = New Point(692, 361)
         Label3.Name = "Label3"
@@ -555,6 +583,7 @@ Partial Class dashboardview
         ' 
         PanelRound6.Anchor = AnchorStyles.Top
         PanelRound6.BackColor = Color.White
+        PanelRound6.Controls.Add(Panel2)
         PanelRound6.Controls.Add(Label3)
         PanelRound6.Controls.Add(Label2)
         PanelRound6.Controls.Add(Label1)
@@ -571,22 +600,31 @@ Partial Class dashboardview
         PanelRound6.Size = New Size(778, 405)
         PanelRound6.TabIndex = 6
         ' 
+        ' Panel2
+        ' 
+        Panel2.AutoScroll = True
+        Panel2.Location = New Point(0, 45)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(775, 313)
+        Panel2.TabIndex = 12
+        ' 
         ' SubscribersGrowth
         ' 
         SubscribersGrowth.Anchor = AnchorStyles.Top
         SubscribersGrowth.AutoSize = True
-        SubscribersGrowth.Font = New Font("Verdana", 11F)
+        SubscribersGrowth.Font = New Font("Verdana", 11.0F)
         SubscribersGrowth.ForeColor = Color.Black
         SubscribersGrowth.Location = New Point(27, 15)
         SubscribersGrowth.Name = "SubscribersGrowth"
-        SubscribersGrowth.Size = New Size(133, 18)
+        SubscribersGrowth.Size = New Size(152, 18)
         SubscribersGrowth.TabIndex = 10
-        SubscribersGrowth.Text = "Total Subscribers"
+        SubscribersGrowth.Text = "Subscriber Growtth"
         ' 
         ' PanelRound5
         ' 
         PanelRound5.Anchor = AnchorStyles.Top
         PanelRound5.BackColor = Color.White
+        PanelRound5.Controls.Add(Panel1)
         PanelRound5.Controls.Add(SubscribersGrowth)
         PanelRound5.CornerRadius = 12
         PanelRound5.Location = New Point(200, 208)
@@ -594,11 +632,19 @@ Partial Class dashboardview
         PanelRound5.Size = New Size(778, 405)
         PanelRound5.TabIndex = 5
         ' 
+        ' Panel1
+        ' 
+        Panel1.AutoScroll = True
+        Panel1.Location = New Point(3, 45)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(775, 313)
+        Panel1.TabIndex = 11
+        ' 
         ' LabelPendingService
         ' 
         LabelPendingService.Anchor = AnchorStyles.Top
         LabelPendingService.AutoSize = True
-        LabelPendingService.Font = New Font("Verdana", 11F)
+        LabelPendingService.Font = New Font("Verdana", 11.0F)
         LabelPendingService.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelPendingService.Location = New Point(19, 12)
         LabelPendingService.Name = "LabelPendingService"
@@ -609,7 +655,7 @@ Partial Class dashboardview
         ' PendingService
         ' 
         PendingService.Anchor = AnchorStyles.Top
-        PendingService.Image = My.Resources.Resources.PendingServices
+        PendingService.Image = CType(resources.GetObject("PendingService.Image"), Image)
         PendingService.Location = New Point(301, 47)
         PendingService.Name = "PendingService"
         PendingService.Size = New Size(45, 48)
@@ -621,7 +667,7 @@ Partial Class dashboardview
         ' 
         AmountPendingServices.Anchor = AnchorStyles.Top
         AmountPendingServices.AutoSize = True
-        AmountPendingServices.Font = New Font("Verdana", 16F)
+        AmountPendingServices.Font = New Font("Verdana", 16.0F)
         AmountPendingServices.Location = New Point(19, 47)
         AmountPendingServices.Name = "AmountPendingServices"
         AmountPendingServices.Size = New Size(68, 26)
@@ -632,7 +678,7 @@ Partial Class dashboardview
         ' 
         PercentPendingService.Anchor = AnchorStyles.Top
         PercentPendingService.AutoSize = True
-        PercentPendingService.Font = New Font("Segoe UI", 10F)
+        PercentPendingService.Font = New Font("Segoe UI", 10.0F)
         PercentPendingService.ForeColor = Color.FromArgb(CByte(0), CByte(201), CByte(80))
         PercentPendingService.Location = New Point(19, 80)
         PercentPendingService.Name = "PercentPendingService"
@@ -658,7 +704,7 @@ Partial Class dashboardview
         ' 
         LabelActiveInstallation.Anchor = AnchorStyles.Top
         LabelActiveInstallation.AutoSize = True
-        LabelActiveInstallation.Font = New Font("Verdana", 11F)
+        LabelActiveInstallation.Font = New Font("Verdana", 11.0F)
         LabelActiveInstallation.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelActiveInstallation.Location = New Point(21, 12)
         LabelActiveInstallation.Name = "LabelActiveInstallation"
@@ -669,7 +715,7 @@ Partial Class dashboardview
         ' ActiveInstall
         ' 
         ActiveInstall.Anchor = AnchorStyles.Top
-        ActiveInstall.Image = My.Resources.Resources.ActiveInstallation
+        ActiveInstall.Image = CType(resources.GetObject("ActiveInstall.Image"), Image)
         ActiveInstall.Location = New Point(298, 47)
         ActiveInstall.Name = "ActiveInstall"
         ActiveInstall.Size = New Size(45, 48)
@@ -681,7 +727,7 @@ Partial Class dashboardview
         ' 
         AmountActiveInstall.Anchor = AnchorStyles.Top
         AmountActiveInstall.AutoSize = True
-        AmountActiveInstall.Font = New Font("Verdana", 16F)
+        AmountActiveInstall.Font = New Font("Verdana", 16.0F)
         AmountActiveInstall.Location = New Point(21, 47)
         AmountActiveInstall.Name = "AmountActiveInstall"
         AmountActiveInstall.Size = New Size(68, 26)
@@ -692,7 +738,7 @@ Partial Class dashboardview
         ' 
         PercentActiveInstall.Anchor = AnchorStyles.Top
         PercentActiveInstall.AutoSize = True
-        PercentActiveInstall.Font = New Font("Segoe UI", 10F)
+        PercentActiveInstall.Font = New Font("Segoe UI", 10.0F)
         PercentActiveInstall.ForeColor = Color.FromArgb(CByte(0), CByte(201), CByte(80))
         PercentActiveInstall.Location = New Point(21, 80)
         PercentActiveInstall.Name = "PercentActiveInstall"
@@ -717,7 +763,7 @@ Partial Class dashboardview
         ' 
         LabelMonthlyRevenue.Anchor = AnchorStyles.Top
         LabelMonthlyRevenue.AutoSize = True
-        LabelMonthlyRevenue.Font = New Font("Verdana", 11F)
+        LabelMonthlyRevenue.Font = New Font("Verdana", 11.0F)
         LabelMonthlyRevenue.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelMonthlyRevenue.Location = New Point(16, 12)
         LabelMonthlyRevenue.Name = "LabelMonthlyRevenue"
@@ -728,7 +774,7 @@ Partial Class dashboardview
         ' MonthlyRev
         ' 
         MonthlyRev.Anchor = AnchorStyles.Top
-        MonthlyRev.Image = My.Resources.Resources.MonthlyRevenue
+        MonthlyRev.Image = CType(resources.GetObject("MonthlyRev.Image"), Image)
         MonthlyRev.Location = New Point(300, 47)
         MonthlyRev.Name = "MonthlyRev"
         MonthlyRev.Size = New Size(45, 48)
@@ -740,7 +786,7 @@ Partial Class dashboardview
         ' 
         AmountMonthlyRev.Anchor = AnchorStyles.Top
         AmountMonthlyRev.AutoSize = True
-        AmountMonthlyRev.Font = New Font("Verdana", 16F)
+        AmountMonthlyRev.Font = New Font("Verdana", 16.0F)
         AmountMonthlyRev.Location = New Point(16, 47)
         AmountMonthlyRev.Name = "AmountMonthlyRev"
         AmountMonthlyRev.Size = New Size(68, 26)
@@ -751,7 +797,7 @@ Partial Class dashboardview
         ' 
         PercentMonthlyRev.Anchor = AnchorStyles.Top
         PercentMonthlyRev.AutoSize = True
-        PercentMonthlyRev.Font = New Font("Segoe UI", 10F)
+        PercentMonthlyRev.Font = New Font("Segoe UI", 10.0F)
         PercentMonthlyRev.ForeColor = Color.FromArgb(CByte(0), CByte(201), CByte(80))
         PercentMonthlyRev.Location = New Point(16, 80)
         PercentMonthlyRev.Name = "PercentMonthlyRev"
@@ -776,7 +822,7 @@ Partial Class dashboardview
         ' 
         LabelTotalSubscribers.Anchor = AnchorStyles.Top
         LabelTotalSubscribers.AutoSize = True
-        LabelTotalSubscribers.Font = New Font("Verdana", 11F)
+        LabelTotalSubscribers.Font = New Font("Verdana", 11.0F)
         LabelTotalSubscribers.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelTotalSubscribers.Location = New Point(22, 12)
         LabelTotalSubscribers.Name = "LabelTotalSubscribers"
@@ -787,7 +833,7 @@ Partial Class dashboardview
         ' TotalSubs
         ' 
         TotalSubs.Anchor = AnchorStyles.Top
-        TotalSubs.Image = My.Resources.Resources.TotalSusbcribers
+        TotalSubs.Image = CType(resources.GetObject("TotalSubs.Image"), Image)
         TotalSubs.Location = New Point(302, 47)
         TotalSubs.Name = "TotalSubs"
         TotalSubs.Size = New Size(45, 48)
@@ -799,7 +845,7 @@ Partial Class dashboardview
         ' 
         AmountSubscribers.Anchor = AnchorStyles.Top
         AmountSubscribers.AutoSize = True
-        AmountSubscribers.Font = New Font("Verdana", 16F)
+        AmountSubscribers.Font = New Font("Verdana", 16.0F)
         AmountSubscribers.Location = New Point(22, 47)
         AmountSubscribers.Name = "AmountSubscribers"
         AmountSubscribers.Size = New Size(68, 26)
@@ -810,7 +856,7 @@ Partial Class dashboardview
         ' 
         PercentTotalSub.Anchor = AnchorStyles.Top
         PercentTotalSub.AutoSize = True
-        PercentTotalSub.Font = New Font("Segoe UI", 10F)
+        PercentTotalSub.Font = New Font("Segoe UI", 10.0F)
         PercentTotalSub.ForeColor = Color.FromArgb(CByte(0), CByte(201), CByte(80))
         PercentTotalSub.Location = New Point(22, 80)
         PercentTotalSub.Name = "PercentTotalSub"
@@ -834,7 +880,7 @@ Partial Class dashboardview
         ' PictureBox3
         ' 
         PictureBox3.Anchor = AnchorStyles.Top
-        PictureBox3.Image = My.Resources.Resources.ButtercupDot
+        PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
         PictureBox3.Location = New Point(345, 301)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(8, 8)
@@ -844,7 +890,7 @@ Partial Class dashboardview
         ' PictureBox2
         ' 
         PictureBox2.Anchor = AnchorStyles.Top
-        PictureBox2.Image = My.Resources.Resources.EcstacyDot
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(184, 298)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(10, 11)
@@ -854,7 +900,7 @@ Partial Class dashboardview
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top
-        PictureBox1.Image = My.Resources.Resources.greenDot
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(32, 298)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(10, 11)
@@ -865,7 +911,7 @@ Partial Class dashboardview
         ' 
         Pending.Anchor = AnchorStyles.Top
         Pending.AutoSize = True
-        Pending.Font = New Font("Verdana", 11F)
+        Pending.Font = New Font("Verdana", 11.0F)
         Pending.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         Pending.Location = New Point(377, 291)
         Pending.Name = "Pending"
@@ -877,7 +923,7 @@ Partial Class dashboardview
         ' 
         InProgress.Anchor = AnchorStyles.Top
         InProgress.AutoSize = True
-        InProgress.Font = New Font("Verdana", 11F)
+        InProgress.Font = New Font("Verdana", 11.0F)
         InProgress.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         InProgress.Location = New Point(200, 291)
         InProgress.Name = "InProgress"
@@ -889,7 +935,7 @@ Partial Class dashboardview
         ' 
         LabelCompleted.Anchor = AnchorStyles.Top
         LabelCompleted.AutoSize = True
-        LabelCompleted.Font = New Font("Verdana", 11F)
+        LabelCompleted.Font = New Font("Verdana", 11.0F)
         LabelCompleted.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LabelCompleted.Location = New Point(48, 291)
         LabelCompleted.Name = "LabelCompleted"
@@ -901,7 +947,7 @@ Partial Class dashboardview
         ' 
         LabelStatusDistribution.Anchor = AnchorStyles.Top
         LabelStatusDistribution.AutoSize = True
-        LabelStatusDistribution.Font = New Font("Verdana", 11F)
+        LabelStatusDistribution.Font = New Font("Verdana", 11.0F)
         LabelStatusDistribution.Location = New Point(19, 11)
         LabelStatusDistribution.Name = "LabelStatusDistribution"
         LabelStatusDistribution.Size = New Size(203, 18)
@@ -912,7 +958,7 @@ Partial Class dashboardview
         ' 
         LabelSubscriberGrowth.Anchor = AnchorStyles.Top
         LabelSubscriberGrowth.AutoSize = True
-        LabelSubscriberGrowth.Font = New Font("Verdana", 11F)
+        LabelSubscriberGrowth.Font = New Font("Verdana", 11.0F)
         LabelSubscriberGrowth.Location = New Point(20, 11)
         LabelSubscriberGrowth.Name = "LabelSubscriberGrowth"
         LabelSubscriberGrowth.Size = New Size(146, 18)
@@ -923,7 +969,7 @@ Partial Class dashboardview
         ' 
         LblActiveInstallation.Anchor = AnchorStyles.Top
         LblActiveInstallation.AutoSize = True
-        LblActiveInstallation.Font = New Font("Verdana", 11F)
+        LblActiveInstallation.Font = New Font("Verdana", 11.0F)
         LblActiveInstallation.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LblActiveInstallation.Location = New Point(19, 9)
         LblActiveInstallation.Name = "LblActiveInstallation"
@@ -934,7 +980,7 @@ Partial Class dashboardview
         ' ActiveInstallations
         ' 
         ActiveInstallations.Anchor = AnchorStyles.Top
-        ActiveInstallations.Image = My.Resources.Resources.ActiveInstallation
+        ActiveInstallations.Image = CType(resources.GetObject("ActiveInstallations.Image"), Image)
         ActiveInstallations.Location = New Point(183, 50)
         ActiveInstallations.Name = "ActiveInstallations"
         ActiveInstallations.Size = New Size(45, 48)
@@ -946,7 +992,7 @@ Partial Class dashboardview
         ' 
         LabelActiveInstall.Anchor = AnchorStyles.Top
         LabelActiveInstall.AutoSize = True
-        LabelActiveInstall.Font = New Font("Verdana", 20F)
+        LabelActiveInstall.Font = New Font("Verdana", 20.0F)
         LabelActiveInstall.Location = New Point(19, 50)
         LabelActiveInstall.Name = "LabelActiveInstall"
         LabelActiveInstall.Size = New Size(82, 32)
@@ -957,7 +1003,7 @@ Partial Class dashboardview
         ' 
         LabelActive.Anchor = AnchorStyles.Top
         LabelActive.AutoSize = True
-        LabelActive.Font = New Font("Verdana", 9F)
+        LabelActive.Font = New Font("Verdana", 9.0F)
         LabelActive.ForeColor = Color.FromArgb(CByte(0), CByte(186), CByte(74))
         LabelActive.Location = New Point(19, 86)
         LabelActive.Name = "LabelActive"
@@ -969,7 +1015,7 @@ Partial Class dashboardview
         ' 
         LblPendingServices.Anchor = AnchorStyles.Top
         LblPendingServices.AutoSize = True
-        LblPendingServices.Font = New Font("Verdana", 11F)
+        LblPendingServices.Font = New Font("Verdana", 11.0F)
         LblPendingServices.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LblPendingServices.Location = New Point(19, 9)
         LblPendingServices.Name = "LblPendingServices"
@@ -980,7 +1026,7 @@ Partial Class dashboardview
         ' PendingServices
         ' 
         PendingServices.Anchor = AnchorStyles.Top
-        PendingServices.Image = My.Resources.Resources.PendingServices
+        PendingServices.Image = CType(resources.GetObject("PendingServices.Image"), Image)
         PendingServices.Location = New Point(181, 50)
         PendingServices.Name = "PendingServices"
         PendingServices.Size = New Size(45, 48)
@@ -992,7 +1038,7 @@ Partial Class dashboardview
         ' 
         LabelPending.Anchor = AnchorStyles.Top
         LabelPending.AutoSize = True
-        LabelPending.Font = New Font("Verdana", 20F)
+        LabelPending.Font = New Font("Verdana", 20.0F)
         LabelPending.Location = New Point(19, 50)
         LabelPending.Name = "LabelPending"
         LabelPending.Size = New Size(82, 32)
@@ -1003,7 +1049,7 @@ Partial Class dashboardview
         ' 
         LabelPendingServices.Anchor = AnchorStyles.Top
         LabelPendingServices.AutoSize = True
-        LabelPendingServices.Font = New Font("Verdana", 9F)
+        LabelPendingServices.Font = New Font("Verdana", 9.0F)
         LabelPendingServices.ForeColor = Color.FromArgb(CByte(0), CByte(186), CByte(74))
         LabelPendingServices.Location = New Point(19, 86)
         LabelPendingServices.Name = "LabelPendingServices"
@@ -1015,7 +1061,7 @@ Partial Class dashboardview
         ' 
         LblTotalSubs.Anchor = AnchorStyles.Top
         LblTotalSubs.AutoSize = True
-        LblTotalSubs.Font = New Font("Verdana", 11F)
+        LblTotalSubs.Font = New Font("Verdana", 11.0F)
         LblTotalSubs.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LblTotalSubs.Location = New Point(20, 9)
         LblTotalSubs.Name = "LblTotalSubs"
@@ -1026,7 +1072,7 @@ Partial Class dashboardview
         ' TotalSubscribers
         ' 
         TotalSubscribers.Anchor = AnchorStyles.Top
-        TotalSubscribers.Image = My.Resources.Resources.TotalSusbcribers
+        TotalSubscribers.Image = CType(resources.GetObject("TotalSubscribers.Image"), Image)
         TotalSubscribers.Location = New Point(181, 50)
         TotalSubscribers.Name = "TotalSubscribers"
         TotalSubscribers.Size = New Size(45, 50)
@@ -1038,7 +1084,7 @@ Partial Class dashboardview
         ' 
         LabelTotalSubs.Anchor = AnchorStyles.Top
         LabelTotalSubs.AutoSize = True
-        LabelTotalSubs.Font = New Font("Verdana", 20F)
+        LabelTotalSubs.Font = New Font("Verdana", 20.0F)
         LabelTotalSubs.Location = New Point(20, 50)
         LabelTotalSubs.Name = "LabelTotalSubs"
         LabelTotalSubs.Size = New Size(82, 32)
@@ -1049,7 +1095,7 @@ Partial Class dashboardview
         ' 
         LastMonthSubs.Anchor = AnchorStyles.Top
         LastMonthSubs.AutoSize = True
-        LastMonthSubs.Font = New Font("Verdana", 9F)
+        LastMonthSubs.Font = New Font("Verdana", 9.0F)
         LastMonthSubs.ForeColor = Color.FromArgb(CByte(0), CByte(186), CByte(74))
         LastMonthSubs.Location = New Point(20, 86)
         LastMonthSubs.Name = "LastMonthSubs"
@@ -1061,7 +1107,7 @@ Partial Class dashboardview
         ' 
         LblMothlyRev.Anchor = AnchorStyles.Top
         LblMothlyRev.AutoSize = True
-        LblMothlyRev.Font = New Font("Verdana", 11F)
+        LblMothlyRev.Font = New Font("Verdana", 11.0F)
         LblMothlyRev.ForeColor = Color.FromArgb(CByte(74), CByte(85), CByte(101))
         LblMothlyRev.Location = New Point(18, 9)
         LblMothlyRev.Name = "LblMothlyRev"
@@ -1073,7 +1119,7 @@ Partial Class dashboardview
         ' 
         LabelMonthlyRev.Anchor = AnchorStyles.Top
         LabelMonthlyRev.AutoSize = True
-        LabelMonthlyRev.Font = New Font("Verdana", 20F)
+        LabelMonthlyRev.Font = New Font("Verdana", 20.0F)
         LabelMonthlyRev.Location = New Point(18, 50)
         LabelMonthlyRev.Name = "LabelMonthlyRev"
         LabelMonthlyRev.Size = New Size(82, 32)
@@ -1084,7 +1130,7 @@ Partial Class dashboardview
         ' 
         LabelMonthlyRevs.Anchor = AnchorStyles.Top
         LabelMonthlyRevs.AutoSize = True
-        LabelMonthlyRevs.Font = New Font("Verdana", 9F)
+        LabelMonthlyRevs.Font = New Font("Verdana", 9.0F)
         LabelMonthlyRevs.ForeColor = Color.FromArgb(CByte(0), CByte(186), CByte(74))
         LabelMonthlyRevs.Location = New Point(18, 86)
         LabelMonthlyRevs.Name = "LabelMonthlyRevs"
@@ -1095,7 +1141,7 @@ Partial Class dashboardview
         ' MonthlyRevenue
         ' 
         MonthlyRevenue.Anchor = AnchorStyles.Top
-        MonthlyRevenue.Image = My.Resources.Resources.MonthlyRevenue
+        MonthlyRevenue.Image = CType(resources.GetObject("MonthlyRevenue.Image"), Image)
         MonthlyRevenue.Location = New Point(180, 50)
         MonthlyRevenue.Name = "MonthlyRevenue"
         MonthlyRevenue.Size = New Size(46, 48)
@@ -1133,7 +1179,7 @@ Partial Class dashboardview
         ' 
         LabelMonthlyRevenueReached.Anchor = AnchorStyles.Top
         LabelMonthlyRevenueReached.AutoSize = True
-        LabelMonthlyRevenueReached.Font = New Font("Segoe UI", 11F)
+        LabelMonthlyRevenueReached.Font = New Font("Segoe UI", 11.0F)
         LabelMonthlyRevenueReached.ForeColor = Color.FromArgb(CByte(1), CByte(102), CByte(48))
         LabelMonthlyRevenueReached.Location = New Point(6, 20)
         LabelMonthlyRevenueReached.Name = "LabelMonthlyRevenueReached"
@@ -1156,7 +1202,7 @@ Partial Class dashboardview
         ' 
         LabelPendingInstallations.Anchor = AnchorStyles.Top
         LabelPendingInstallations.AutoSize = True
-        LabelPendingInstallations.Font = New Font("Segoe UI", 11F)
+        LabelPendingInstallations.Font = New Font("Segoe UI", 11.0F)
         LabelPendingInstallations.ForeColor = Color.FromArgb(CByte(25), CByte(60), CByte(184))
         LabelPendingInstallations.Location = New Point(6, 19)
         LabelPendingInstallations.Name = "LabelPendingInstallations"
@@ -1179,7 +1225,7 @@ Partial Class dashboardview
         ' 
         LabelLowStockInventory.Anchor = AnchorStyles.Top
         LabelLowStockInventory.AutoSize = True
-        LabelLowStockInventory.Font = New Font("Segoe UI", 11F)
+        LabelLowStockInventory.Font = New Font("Segoe UI", 11.0F)
         LabelLowStockInventory.ForeColor = Color.FromArgb(CByte(159), CByte(45), CByte(0))
         LabelLowStockInventory.Location = New Point(6, 23)
         LabelLowStockInventory.Name = "LabelLowStockInventory"
@@ -1190,7 +1236,7 @@ Partial Class dashboardview
         ' PictureBox7
         ' 
         PictureBox7.Anchor = AnchorStyles.Top
-        PictureBox7.Image = My.Resources.Resources.RedDanger
+        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
         PictureBox7.Location = New Point(38, 21)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(24, 24)
@@ -1202,7 +1248,7 @@ Partial Class dashboardview
         ' 
         LabelSystemAlert.Anchor = AnchorStyles.Top
         LabelSystemAlert.AutoSize = True
-        LabelSystemAlert.Font = New Font("Verdana", 11F)
+        LabelSystemAlert.Font = New Font("Verdana", 11.0F)
         LabelSystemAlert.ForeColor = Color.Black
         LabelSystemAlert.Location = New Point(68, 22)
         LabelSystemAlert.Name = "LabelSystemAlert"
@@ -1210,12 +1256,20 @@ Partial Class dashboardview
         LabelSystemAlert.TabIndex = 15
         LabelSystemAlert.Text = "System Alert"
         ' 
+        ' Panel3
+        ' 
+        Panel3.Location = New Point(200, 686)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(667, 405)
+        Panel3.TabIndex = 15
+        ' 
         ' dashboardview
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
         BackColor = SystemColors.Control
+        Controls.Add(Panel3)
         Controls.Add(PanelRound2)
         Controls.Add(PanelRound3)
         Controls.Add(PanelRound10)
@@ -1236,6 +1290,8 @@ Partial Class dashboardview
         PanelRound9.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         PanelSubscribersPlan.ResumeLayout(False)
+        PanelSubscribersPlan.PerformLayout()
+        Panel4.ResumeLayout(False)
         CType(GreenDotComplete, ComponentModel.ISupportInitialize).EndInit()
         CType(OrangeDotProgress, ComponentModel.ISupportInitialize).EndInit()
         CType(OrangePending, ComponentModel.ISupportInitialize).EndInit()
@@ -1369,5 +1425,12 @@ Partial Class dashboardview
     Friend WithEvents LabelLowStockInventory As Label
     Friend WithEvents LabelMonthlyRevenueReached As Label
     Friend WithEvents LabelPendingInstallations As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Panel4 As Panel
 
 End Class
+
