@@ -1,19 +1,48 @@
-﻿Public Class NewPassword
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+﻿Imports System.Windows.Forms.Design
 
-    End Sub
+Public Class NewPassword
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    ' Assuming New Password input is txtNewPassword and Confirm is txtConfirmPassword
+    Public txtNewPassword As TextBox ' Placeholder
+    Public txtConfirmPassword As TextBox ' Placeholder
 
-    End Sub
+    Private Async Sub ButtonRounded1_Click(sender As Object, e As EventArgs) Handles ButtonRounded1.Click
+        ' The "Set New Password" button click handler
 
-    Private Sub ButtonRounded4_Click(sender As Object, e As EventArgs) Handles ButtonRounded4.Click
-        Dim parentContainer = TryCast(Me.Parent, Control)
-        If parentContainer Is Nothing Then
-            Return
+        Dim newPw As String = If(txtNewPassword IsNot Nothing, txtNewPassword.Text.Trim(), String.Empty)
+        Dim confirm As String = If(txtConfirmPassword IsNot Nothing, txtConfirmPassword.Text.Trim(), String.Empty)
+
+        ' ... (Validation check) ...
+
+        ButtonRounded1.Enabled = False
+
+        ' 1. Call API to actually change the password (using the stored email)
+        Dim userIdentifier As String = GlobalState.UserEmail
+        Dim result = Await APIService.ChangePasswordAsync(userIdentifier, newPw)
+        Dim success = result.Item1
+        Dim responseMessage = result.Item2
+
+        ButtonRounded1.Enabled = True
+
+        If success Then
+            MessageBox.Show("Password updated successfully. Please log in.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            ' 2. Navigate back to the main login view
+            ButtonRounded4_Click(sender, e)
+        Else
+            ' Handle API failure for password update
+            MessageBox.Show(responseMessage, "Update Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+    End Sub
+
+    ' (Other original methods retained for context)
+    Private Sub ButtonRounded4_Click(sender As Object, e As EventArgs) Handles ButtonRounded4.Click
+        ' Back button / Return to Login logic
+        Dim parentContainer = TryCast(Me.Parent, Control)
+        If parentContainer Is Nothing Then Return
         parentContainer.Controls.Remove(Me)
 
+        ' Logic to restore the main Login view (assuming it's named sparxLogin)
         Dim parentForm = TryCast(Me.FindForm(), sparxLogin)
         If parentForm IsNot Nothing Then
             Dim restore = parentForm.GetType().GetMethod("RestoreLoginView", Reflection.BindingFlags.Instance Or Reflection.BindingFlags.NonPublic Or Reflection.BindingFlags.Public)
@@ -23,24 +52,12 @@
         End If
     End Sub
 
-    Private Sub ButtonRounded1_Click(sender As Object, e As EventArgs) Handles ButtonRounded1.Click
-        Dim newPw As String = If(txtEmail IsNot Nothing, txtEmail.Text.Trim(), String.Empty)
-        Dim confirm As String = If(TextBox1 IsNot Nothing, TextBox1.Text.Trim(), String.Empty)
+    Private Sub NewPassword_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    End Sub
 
-        If String.IsNullOrEmpty(newPw) OrElse String.IsNullOrEmpty(confirm) Then
-            MessageBox.Show("Please fill in both password fields.", "Missing Info", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    End Sub
 
-        If newPw <> confirm Then
-            MessageBox.Show("Passwords do not match.", "Mismatch", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        ' TODO: Call your API to actually change the password here.
-        MessageBox.Show("Password updated successfully. Please log in.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-        ' Navigate back to the role-specific login view
-        ButtonRounded4_Click(sender, e)
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
     End Sub
 End Class

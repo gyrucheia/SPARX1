@@ -77,7 +77,7 @@ Partial Class Tabs
         HistoryBtn.FlatAppearance.BorderSize = 0
         HistoryBtn.FlatStyle = FlatStyle.Flat
         HistoryBtn.ForeColor = Color.Transparent
-        HistoryBtn.Image = My.Resources.history
+        HistoryBtn.Image = Global.SPARX_Management_System.My.Resources.history
         HistoryBtn.ImageAlign = ContentAlignment.MiddleLeft
         HistoryBtn.Location = New Point(0, 384)
         HistoryBtn.Margin = New Padding(3, 2, 3, 2)
@@ -96,7 +96,7 @@ Partial Class Tabs
         BillingBtn.FlatAppearance.BorderSize = 0
         BillingBtn.FlatStyle = FlatStyle.Flat
         BillingBtn.ForeColor = Color.Transparent
-        BillingBtn.Image = My.Resources.billing
+        BillingBtn.Image = Global.SPARX_Management_System.My.Resources.billing
         BillingBtn.ImageAlign = ContentAlignment.MiddleLeft
         BillingBtn.Location = New Point(0, 340)
         BillingBtn.Margin = New Padding(3, 2, 3, 2)
@@ -115,7 +115,7 @@ Partial Class Tabs
         SubscriberBtn.FlatAppearance.BorderSize = 0
         SubscriberBtn.FlatStyle = FlatStyle.Flat
         SubscriberBtn.ForeColor = Color.Transparent
-        SubscriberBtn.Image = My.Resources.subscriber
+        SubscriberBtn.Image = Global.SPARX_Management_System.My.Resources.subscriber
         SubscriberBtn.ImageAlign = ContentAlignment.MiddleLeft
         SubscriberBtn.Location = New Point(0, 290)
         SubscriberBtn.Margin = New Padding(3, 2, 3, 2)
@@ -134,7 +134,7 @@ Partial Class Tabs
         InventoryBtn.FlatAppearance.BorderSize = 0
         InventoryBtn.FlatStyle = FlatStyle.Flat
         InventoryBtn.ForeColor = Color.Transparent
-        InventoryBtn.Image = My.Resources.inventory
+        InventoryBtn.Image = Global.SPARX_Management_System.My.Resources.inventory
         InventoryBtn.ImageAlign = ContentAlignment.MiddleLeft
         InventoryBtn.Location = New Point(0, 246)
         InventoryBtn.Margin = New Padding(3, 2, 3, 2)
@@ -153,7 +153,7 @@ Partial Class Tabs
         ServiceBtn.FlatAppearance.BorderSize = 0
         ServiceBtn.FlatStyle = FlatStyle.Flat
         ServiceBtn.ForeColor = Color.Transparent
-        ServiceBtn.Image = My.Resources.service
+        ServiceBtn.Image = Global.SPARX_Management_System.My.Resources.service
         ServiceBtn.ImageAlign = ContentAlignment.MiddleLeft
         ServiceBtn.Location = New Point(0, 202)
         ServiceBtn.Margin = New Padding(3, 2, 3, 2)
@@ -172,7 +172,7 @@ Partial Class Tabs
         InstallationBtn.FlatAppearance.BorderSize = 0
         InstallationBtn.FlatStyle = FlatStyle.Flat
         InstallationBtn.ForeColor = Color.Transparent
-        InstallationBtn.Image = My.Resources.installation1
+        InstallationBtn.Image = Global.SPARX_Management_System.My.Resources.installation1
         InstallationBtn.ImageAlign = ContentAlignment.MiddleLeft
         InstallationBtn.Location = New Point(0, 159)
         InstallationBtn.Margin = New Padding(3, 2, 3, 2)
@@ -190,7 +190,7 @@ Partial Class Tabs
         SalesBtn.FlatAppearance.BorderSize = 0
         SalesBtn.FlatStyle = FlatStyle.Flat
         SalesBtn.ForeColor = Color.Transparent
-        SalesBtn.Image = My.Resources.sales
+        SalesBtn.Image = Global.SPARX_Management_System.My.Resources.sales
         SalesBtn.ImageAlign = ContentAlignment.MiddleLeft
         SalesBtn.Location = New Point(0, 116)
         SalesBtn.Margin = New Padding(3, 2, 3, 2)
@@ -207,7 +207,7 @@ Partial Class Tabs
         DashboardBtn.FlatAppearance.BorderSize = 0
         DashboardBtn.FlatStyle = FlatStyle.Flat
         DashboardBtn.ForeColor = Color.Transparent
-        DashboardBtn.Image = My.Resources.dashboard1
+        DashboardBtn.Image = Global.SPARX_Management_System.My.Resources.dashboard1
         DashboardBtn.ImageAlign = ContentAlignment.MiddleLeft
         DashboardBtn.Location = New Point(0, 72)
         DashboardBtn.Margin = New Padding(3, 2, 3, 2)
@@ -221,7 +221,7 @@ Partial Class Tabs
         ' 
         ' ImgLogo
         ' 
-        ImgLogo.Image = My.Resources.SparxFiber
+        ImgLogo.Image = Global.SPARX_Management_System.My.Resources.SparxFiber
         ImgLogo.Location = New Point(41, 12)
         ImgLogo.Name = "ImgLogo"
         ImgLogo.Size = New Size(117, 55)
@@ -254,7 +254,7 @@ Partial Class Tabs
         ' 
         ' ImgOnline
         ' 
-        ImgOnline.Image = My.Resources.greenDot
+        ImgOnline.Image = Global.SPARX_Management_System.My.Resources.greenDot
         ImgOnline.Location = New Point(6, 11)
         ImgOnline.Name = "ImgOnline"
         ImgOnline.Size = New Size(12, 10)
@@ -274,7 +274,7 @@ Partial Class Tabs
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.redDot
+        PictureBox1.Image = Global.SPARX_Management_System.My.Resources.redDot
         PictureBox1.Location = New Point(1578, 20)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(12, 10)
@@ -284,7 +284,7 @@ Partial Class Tabs
         ' 
         ' ImgBell
         ' 
-        ImgBell.Image = My.Resources.notification
+        ImgBell.Image = Global.SPARX_Management_System.My.Resources.notification
         ImgBell.Location = New Point(1566, 23)
         ImgBell.Name = "ImgBell"
         ImgBell.Size = New Size(24, 24)
@@ -324,7 +324,7 @@ Partial Class Tabs
         ' 
         ' ImgStatus
         ' 
-        ImgStatus.Image = My.Resources.greenDot
+        ImgStatus.Image = Global.SPARX_Management_System.My.Resources.greenDot
         ImgStatus.Location = New Point(6, 11)
         ImgStatus.Name = "ImgStatus"
         ImgStatus.Size = New Size(12, 10)

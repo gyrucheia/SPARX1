@@ -220,7 +220,7 @@ Partial Class inventoryview
         ' 
         ' IconFilter
         ' 
-        IconFilter.Image = My.Resources.filter
+        IconFilter.Image = Global.SPARX_Management_System.My.Resources.filter
         IconFilter.Location = New Point(22, 19)
         IconFilter.Name = "IconFilter"
         IconFilter.Size = New Size(24, 24)

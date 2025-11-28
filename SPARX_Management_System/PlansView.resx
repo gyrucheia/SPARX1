@@ -117,4 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAO9JREFUOE/llN0RgjAQhPPCDD8vdoAlWIIl0AGWYAfYASVgB5ZiCZRACbobN4Aj
+        QQP65M7cA3vcl+Nyg/mJNlCWZYelkaZpEcfxVjhjYLSI25pIkqRlY4ZkZ+C0ckmg/koGWLnr8EwDcbJG
+        gFjDWjRUy3rMEKY9JQTqYKyVNUhQO0u0Xsr2Ch0d+W4/uylpnu6CCtkvYs7Bnm53SiNoF0XRTnYvesx9
+        BHPyFb07bFYo3qPQfpas8b56xzEr7FhNAOC5uiOsUTpcKK4mgJXS4fpjIFfkK0BA7OowsD6X1UBKnTWC
+        dXxWap34A6D06JExdwb9bRqGPECWAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="SDPOrangeDot.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAH9JREFUKFOdkcsRgCAMRLcES7AzPCInO8DOKMESKCUmGORA/AyZecMhG2aTRS3a
+        MFHATisSQ4WAg1+nklbkMXMj38KeLBqV88C7uJLFhfy+GE0bjwj1aQt6ktixGo8MDbQzfnPI0tFoPOGu
+        wH6eVVMYCK6WZtLO7Hk/sSyBlQJO7nclMAauq38AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SDPBlueDot.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAALFJREFUOE+tkt0NwjAMhDNCH3koqJtgJgwbZAAkOkpGyChwVxwppIa6gpM+qarv
+        nD+HXpPMcpI5ggIeSgYJtUlta6E4wHRtQp+IA7wae0nDXMUKWOS3JvjhWbknLmGeyyi6GOUmXD31BS9H
+        7gIfe87eU9jAKrj5S4N2YPaS2YBTZxU3wSWmOrqmYYtDHW0+h2X4xvKEVT+PMsUmnp3Qswq34rl4OTC3
+        OyoMjpf7WW2qEJ7lDrOds5P/lQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="SDPGreenDot.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAE5JREFUKFNjAIPjAQoMpwL2M5wMeA/E/4F4PVgMLomQQMbvIYpAqjElIRhkKlYJ
+        BH4PUoDNeASGOg675Amg9YQdifAJzLHvgTr3QyQZGACEqHPa6lJfCwAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

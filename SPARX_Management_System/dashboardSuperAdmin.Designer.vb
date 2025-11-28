@@ -77,7 +77,7 @@ Partial Class dashboardSuperAdmin
         ' PictureBox4
         ' 
         PictureBox4.Anchor = AnchorStyles.Top
-        PictureBox4.Image = My.Resources.redDot
+        PictureBox4.Image = Global.SPARX_Management_System.My.Resources.redDot
         PictureBox4.Location = New Point(1721, 20)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(12, 10)
@@ -99,7 +99,7 @@ Partial Class dashboardSuperAdmin
         ' 
         ' PictureBox3
         ' 
-        PictureBox3.Image = My.Resources.greenDot
+        PictureBox3.Image = Global.SPARX_Management_System.My.Resources.greenDot
         PictureBox3.Location = New Point(6, 11)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(12, 10)
@@ -120,7 +120,7 @@ Partial Class dashboardSuperAdmin
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top
-        PictureBox1.Image = My.Resources.notificationBell
+        PictureBox1.Image = Global.SPARX_Management_System.My.Resources.notificationBell
         PictureBox1.Location = New Point(1707, 23)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(24, 24)
@@ -227,7 +227,7 @@ Partial Class dashboardSuperAdmin
         PlansBtn.FlatAppearance.BorderSize = 0
         PlansBtn.FlatStyle = FlatStyle.Flat
         PlansBtn.ForeColor = Color.Transparent
-        PlansBtn.Image = My.Resources.plan
+        PlansBtn.Image = Global.SPARX_Management_System.My.Resources.plan
         PlansBtn.ImageAlign = ContentAlignment.MiddleLeft
         PlansBtn.Location = New Point(0, 514)
         PlansBtn.Margin = New Padding(3, 2, 3, 2)
@@ -246,7 +246,7 @@ Partial Class dashboardSuperAdmin
         HistoryBtn.FlatAppearance.BorderSize = 0
         HistoryBtn.FlatStyle = FlatStyle.Flat
         HistoryBtn.ForeColor = Color.Transparent
-        HistoryBtn.Image = My.Resources.history
+        HistoryBtn.Image = Global.SPARX_Management_System.My.Resources.history
         HistoryBtn.ImageAlign = ContentAlignment.MiddleLeft
         HistoryBtn.Location = New Point(-3, 471)
         HistoryBtn.Margin = New Padding(3, 2, 3, 2)
@@ -265,7 +265,7 @@ Partial Class dashboardSuperAdmin
         NetworkMapBtn.FlatAppearance.BorderSize = 0
         NetworkMapBtn.FlatStyle = FlatStyle.Flat
         NetworkMapBtn.ForeColor = Color.Transparent
-        NetworkMapBtn.Image = My.Resources.networkMap
+        NetworkMapBtn.Image = Global.SPARX_Management_System.My.Resources.networkMap
         NetworkMapBtn.ImageAlign = ContentAlignment.MiddleLeft
         NetworkMapBtn.Location = New Point(0, 428)
         NetworkMapBtn.Margin = New Padding(3, 2, 3, 2)
@@ -284,7 +284,7 @@ Partial Class dashboardSuperAdmin
         BillingBtn.FlatAppearance.BorderSize = 0
         BillingBtn.FlatStyle = FlatStyle.Flat
         BillingBtn.ForeColor = Color.Transparent
-        BillingBtn.Image = My.Resources.billing
+        BillingBtn.Image = Global.SPARX_Management_System.My.Resources.billing
         BillingBtn.ImageAlign = ContentAlignment.MiddleLeft
         BillingBtn.Location = New Point(0, 384)
         BillingBtn.Margin = New Padding(3, 2, 3, 2)
@@ -303,7 +303,7 @@ Partial Class dashboardSuperAdmin
         SubscriberBtn.FlatAppearance.BorderSize = 0
         SubscriberBtn.FlatStyle = FlatStyle.Flat
         SubscriberBtn.ForeColor = Color.Transparent
-        SubscriberBtn.Image = My.Resources.subscriber
+        SubscriberBtn.Image = Global.SPARX_Management_System.My.Resources.subscriber
         SubscriberBtn.ImageAlign = ContentAlignment.MiddleLeft
         SubscriberBtn.Location = New Point(0, 340)
         SubscriberBtn.Margin = New Padding(3, 2, 3, 2)
@@ -322,7 +322,7 @@ Partial Class dashboardSuperAdmin
         PayrollBtn.FlatAppearance.BorderSize = 0
         PayrollBtn.FlatStyle = FlatStyle.Flat
         PayrollBtn.ForeColor = Color.Transparent
-        PayrollBtn.Image = My.Resources.payroll
+        PayrollBtn.Image = Global.SPARX_Management_System.My.Resources.payroll
         PayrollBtn.ImageAlign = ContentAlignment.MiddleLeft
         PayrollBtn.Location = New Point(0, 290)
         PayrollBtn.Margin = New Padding(3, 2, 3, 2)
@@ -341,7 +341,7 @@ Partial Class dashboardSuperAdmin
         InventoryBtn.FlatAppearance.BorderSize = 0
         InventoryBtn.FlatStyle = FlatStyle.Flat
         InventoryBtn.ForeColor = Color.Transparent
-        InventoryBtn.Image = My.Resources.inventory
+        InventoryBtn.Image = Global.SPARX_Management_System.My.Resources.inventory
         InventoryBtn.ImageAlign = ContentAlignment.MiddleLeft
         InventoryBtn.Location = New Point(0, 246)
         InventoryBtn.Margin = New Padding(3, 2, 3, 2)
@@ -360,7 +360,7 @@ Partial Class dashboardSuperAdmin
         ServiceBtn.FlatAppearance.BorderSize = 0
         ServiceBtn.FlatStyle = FlatStyle.Flat
         ServiceBtn.ForeColor = Color.Transparent
-        ServiceBtn.Image = My.Resources.service
+        ServiceBtn.Image = Global.SPARX_Management_System.My.Resources.service
         ServiceBtn.ImageAlign = ContentAlignment.MiddleLeft
         ServiceBtn.Location = New Point(0, 202)
         ServiceBtn.Margin = New Padding(3, 2, 3, 2)
@@ -379,7 +379,7 @@ Partial Class dashboardSuperAdmin
         InstallationBtn.FlatAppearance.BorderSize = 0
         InstallationBtn.FlatStyle = FlatStyle.Flat
         InstallationBtn.ForeColor = Color.Transparent
-        InstallationBtn.Image = My.Resources.installation
+        InstallationBtn.Image = Global.SPARX_Management_System.My.Resources.installation
         InstallationBtn.ImageAlign = ContentAlignment.MiddleLeft
         InstallationBtn.Location = New Point(0, 159)
         InstallationBtn.Margin = New Padding(3, 2, 3, 2)
@@ -397,7 +397,7 @@ Partial Class dashboardSuperAdmin
         SalesBtn.FlatAppearance.BorderSize = 0
         SalesBtn.FlatStyle = FlatStyle.Flat
         SalesBtn.ForeColor = Color.Transparent
-        SalesBtn.Image = My.Resources.sales
+        SalesBtn.Image = Global.SPARX_Management_System.My.Resources.sales
         SalesBtn.ImageAlign = ContentAlignment.MiddleLeft
         SalesBtn.Location = New Point(0, 116)
         SalesBtn.Margin = New Padding(3, 2, 3, 2)
@@ -414,7 +414,7 @@ Partial Class dashboardSuperAdmin
         DashboardBtn.FlatAppearance.BorderSize = 0
         DashboardBtn.FlatStyle = FlatStyle.Flat
         DashboardBtn.ForeColor = Color.Transparent
-        DashboardBtn.Image = My.Resources.dashboard
+        DashboardBtn.Image = Global.SPARX_Management_System.My.Resources.dashboard
         DashboardBtn.ImageAlign = ContentAlignment.MiddleLeft
         DashboardBtn.Location = New Point(0, 72)
         DashboardBtn.Margin = New Padding(3, 2, 3, 2)
@@ -439,7 +439,7 @@ Partial Class dashboardSuperAdmin
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.Image = My.Resources.SparxFiber
+        PictureBox2.Image = Global.SPARX_Management_System.My.Resources.SparxFiber
         PictureBox2.Location = New Point(41, 12)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(117, 55)

@@ -178,7 +178,7 @@ Partial Class customerservicetab
         InstallationBtn.FlatAppearance.BorderSize = 0
         InstallationBtn.FlatStyle = FlatStyle.Flat
         InstallationBtn.ForeColor = Color.Transparent
-        InstallationBtn.Image = SPARX_Management_System.My.Resources.installation
+        InstallationBtn.Image = Global.SPARX_Management_System.My.Resources.installation
         InstallationBtn.ImageAlign = ContentAlignment.MiddleLeft
         InstallationBtn.Location = New Point(0, 159)
         InstallationBtn.Margin = New Padding(3, 2, 3, 2)
@@ -213,7 +213,7 @@ Partial Class customerservicetab
         DashboardBtn.FlatAppearance.BorderSize = 0
         DashboardBtn.FlatStyle = FlatStyle.Flat
         DashboardBtn.ForeColor = Color.Transparent
-        DashboardBtn.Image = SPARX_Management_System.My.Resources.dashboard
+        DashboardBtn.Image = Global.SPARX_Management_System.My.Resources.dashboard
         DashboardBtn.ImageAlign = ContentAlignment.MiddleLeft
         DashboardBtn.Location = New Point(0, 72)
         DashboardBtn.Margin = New Padding(3, 2, 3, 2)

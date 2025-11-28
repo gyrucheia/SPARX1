@@ -40,13 +40,13 @@ Public Class sparxLogin
 
         ' Initialize picShowHide image
         If picShowHide IsNot Nothing AndAlso picShowHide.Image Is Nothing Then
-            picShowHide.Image = My.Resources.eye_slashed
+            picShowHide.Image = Global.SPARX_Management_System.My.Resources.eye_slashed
         End If
 
         ' Initialize logo image
         If logo IsNot Nothing AndAlso logo.Image Is Nothing Then
             Try
-                logo.Image = My.Resources.SparxLogo2
+                logo.Image = Global.SPARX_Management_System.My.Resources.SparxLogo2
             Catch
                 ' Resource not found, skip
             End Try
@@ -55,7 +55,7 @@ Public Class sparxLogin
         ' Initialize background image
         If SplitContainer1 IsNot Nothing AndAlso SplitContainer1.Panel1.BackgroundImage Is Nothing Then
             Try
-                SplitContainer1.Panel1.BackgroundImage = My.Resources.Resources.SparxBackground
+                SplitContainer1.Panel1.BackgroundImage = Global.SPARX_Management_System.My.Resources.SparxBackground
             Catch
                 ' Resource not found, skip
             End Try
@@ -89,10 +89,10 @@ Public Class sparxLogin
     Private Sub picShowHide_Click(sender As Object, e As EventArgs) Handles picShowHide.Click
         If txtPassword.PasswordChar = "●" Then
             txtPassword.PasswordChar = Chr(0)
-            picShowHide.Image = My.Resources.eye_open
+            picShowHide.Image = Global.SPARX_Management_System.My.Resources.eye_open
         Else
             txtPassword.PasswordChar = "●"
-            picShowHide.Image = My.Resources.eye_slashed
+            picShowHide.Image = Global.SPARX_Management_System.My.Resources.eye_slashed
         End If
     End Sub
 

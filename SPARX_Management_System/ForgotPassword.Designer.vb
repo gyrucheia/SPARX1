@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ForgotPassword
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,11 @@ Partial Class ForgotPassword
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ForgotPassword))
         pnlEmail = New PanelRound()
-        txtEmail = New TextBox()
+        EmailInput = New TextBox()
         lblAccess = New Label()
         lnkAdminContact = New LinkLabel()
         line = New Label()
@@ -50,31 +50,30 @@ Partial Class ForgotPassword
         ' 
         pnlEmail.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         pnlEmail.BackColor = Color.WhiteSmoke
-        pnlEmail.Controls.Add(txtEmail)
+        pnlEmail.Controls.Add(EmailInput)
         pnlEmail.CornerRadius = 8
         pnlEmail.Location = New Point(35, 340)
         pnlEmail.Name = "pnlEmail"
         pnlEmail.Size = New Size(451, 48)
         pnlEmail.TabIndex = 14
-        ' 
-        ' txtEmail
-        ' 
-        txtEmail.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        txtEmail.BackColor = Color.WhiteSmoke
-        txtEmail.BorderStyle = BorderStyle.None
-        txtEmail.CharacterCasing = CharacterCasing.Lower
-        txtEmail.Cursor = Cursors.Hand
-        txtEmail.Font = New Font("Segoe UI", 12F)
-        txtEmail.Location = New Point(8, 10)
-        txtEmail.Name = "txtEmail"
-        txtEmail.Size = New Size(432, 22)
-        txtEmail.TabIndex = 11
+        '
+        ' EmailInput
+        '
+        EmailInput.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        EmailInput.BackColor = Color.WhiteSmoke
+        EmailInput.BorderStyle = BorderStyle.None
+        EmailInput.Cursor = Cursors.Hand
+        EmailInput.Font = New Font("Segoe UI", 12.0F)
+        EmailInput.Location = New Point(8, 12)
+        EmailInput.Name = "EmailInput"
+        EmailInput.Size = New Size(435, 22)
+        EmailInput.TabIndex = 28
         ' 
         ' lblAccess
         ' 
         lblAccess.Anchor = AnchorStyles.Bottom
         lblAccess.AutoSize = True
-        lblAccess.Font = New Font("Verdana", 11F)
+        lblAccess.Font = New Font("Verdana", 11.0F)
         lblAccess.Location = New Point(276, 1039)
         lblAccess.Name = "lblAccess"
         lblAccess.Size = New Size(110, 18)
@@ -85,7 +84,7 @@ Partial Class ForgotPassword
         ' 
         lnkAdminContact.Anchor = AnchorStyles.Bottom
         lnkAdminContact.AutoSize = True
-        lnkAdminContact.Font = New Font("Verdana", 11F)
+        lnkAdminContact.Font = New Font("Verdana", 11.0F)
         lnkAdminContact.LinkBehavior = LinkBehavior.NeverUnderline
         lnkAdminContact.Location = New Point(394, 1039)
         lnkAdminContact.Name = "lnkAdminContact"
@@ -139,7 +138,7 @@ Partial Class ForgotPassword
         ButtonRounded2.Cursor = Cursors.Hand
         ButtonRounded2.FlatAppearance.BorderSize = 0
         ButtonRounded2.FlatStyle = FlatStyle.Flat
-        ButtonRounded2.Font = New Font("Segoe UI", 12F)
+        ButtonRounded2.Font = New Font("Segoe UI", 12.0F)
         ButtonRounded2.ForeColor = Color.Black
         ButtonRounded2.Location = New Point(43, 482)
         ButtonRounded2.Name = "ButtonRounded2"
@@ -156,7 +155,7 @@ Partial Class ForgotPassword
         ButtonRounded1.Cursor = Cursors.Hand
         ButtonRounded1.FlatAppearance.BorderSize = 0
         ButtonRounded1.FlatStyle = FlatStyle.Flat
-        ButtonRounded1.Font = New Font("Segoe UI", 12F)
+        ButtonRounded1.Font = New Font("Segoe UI", 12.0F)
         ButtonRounded1.ForeColor = Color.White
         ButtonRounded1.Location = New Point(43, 411)
         ButtonRounded1.Name = "ButtonRounded1"
@@ -175,14 +174,14 @@ Partial Class ForgotPassword
         Label1.Name = "Label1"
         Label1.Size = New Size(492, 25)
         Label1.TabIndex = 24
-        Label1.Text = "Enter your email address and we'll send you a verification code."
+        Label1.Text = "Enter your phone number and we'll send you a verification code."
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' LinkBtnLogin
         ' 
         LinkBtnLogin.Anchor = AnchorStyles.Bottom
         LinkBtnLogin.AutoSize = True
-        LinkBtnLogin.Font = New Font("Verdana", 11F)
+        LinkBtnLogin.Font = New Font("Verdana", 11.0F)
         LinkBtnLogin.LinkBehavior = LinkBehavior.NeverUnderline
         LinkBtnLogin.Location = New Point(475, 1039)
         LinkBtnLogin.Name = "LinkBtnLogin"
@@ -196,7 +195,7 @@ Partial Class ForgotPassword
         ' 
         LblHAA.Anchor = AnchorStyles.Bottom
         LblHAA.AutoSize = True
-        LblHAA.Font = New Font("Verdana", 11F)
+        LblHAA.Font = New Font("Verdana", 11.0F)
         LblHAA.Location = New Point(276, 1039)
         LblHAA.Name = "LblHAA"
         LblHAA.Size = New Size(143, 18)
@@ -208,7 +207,7 @@ Partial Class ForgotPassword
         ' 
         LinkBtnSignup.Anchor = AnchorStyles.Bottom
         LinkBtnSignup.AutoSize = True
-        LinkBtnSignup.Font = New Font("Verdana", 11F)
+        LinkBtnSignup.Font = New Font("Verdana", 11.0F)
         LinkBtnSignup.LinkBehavior = LinkBehavior.NeverUnderline
         LinkBtnSignup.Location = New Point(475, 1039)
         LinkBtnSignup.Name = "LinkBtnSignup"
@@ -222,7 +221,7 @@ Partial Class ForgotPassword
         ' 
         LblDHA.Anchor = AnchorStyles.Bottom
         LblDHA.AutoSize = True
-        LblDHA.Font = New Font("Verdana", 11F)
+        LblDHA.Font = New Font("Verdana", 11.0F)
         LblDHA.Location = New Point(288, 1039)
         LblDHA.Name = "LblDHA"
         LblDHA.Size = New Size(164, 18)
@@ -233,6 +232,7 @@ Partial Class ForgotPassword
         ' logo
         ' 
         logo.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        logo.Image = CType(resources.GetObject("logo.Image"), Image)
         logo.Location = New Point(146, -389)
         logo.Name = "logo"
         logo.Size = New Size(155, 41)
@@ -245,12 +245,12 @@ Partial Class ForgotPassword
         lblEmail.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lblEmail.AutoSize = True
         lblEmail.BackColor = Color.Transparent
-        lblEmail.Font = New Font("Verdana", 11F)
+        lblEmail.Font = New Font("Verdana", 11.0F)
         lblEmail.Location = New Point(35, 310)
         lblEmail.Name = "lblEmail"
-        lblEmail.Size = New Size(111, 18)
+        lblEmail.Size = New Size(118, 18)
         lblEmail.TabIndex = 5
-        lblEmail.Text = "Email Address"
+        lblEmail.Text = "Phone Number"
         ' 
         ' lblUserLevel
         ' 
@@ -266,7 +266,7 @@ Partial Class ForgotPassword
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Image = Global.SPARX_Management_System.My.Resources.SparxLogo2
         PictureBox1.Location = New Point(226, 35)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(73, 50)
@@ -276,7 +276,7 @@ Partial Class ForgotPassword
         ' 
         ' ForgotPassword
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(pnlLoginCard)
         Name = "ForgotPassword"
@@ -304,12 +304,10 @@ Partial Class ForgotPassword
     Friend WithEvents lnkAdminContact As LinkLabel
     Friend WithEvents lblAccess As Label
     Friend WithEvents pnlEmail As PanelRound
-    Friend WithEvents txtEmail As TextBox
     Friend WithEvents sparxLogo As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ButtonRounded2 As ButtonRounded
     Friend WithEvents ButtonRounded1 As ButtonRounded
     Friend WithEvents PictureBox1 As PictureBox
-
+    Friend WithEvents EmailInput As TextBox
 End Class
-

@@ -241,7 +241,7 @@ Partial Class frmSubscriberUpdate
         btnCancel.FlatStyle = FlatStyle.Flat
         btnCancel.Font = New Font("Segoe UI", 12F)
         btnCancel.ForeColor = Color.White
-        'btnCancel.Image = My.Resources.exportReport
+        'btnCancel.Image = Global.SPARX_Management_System.My.Resources.exportReport
         btnCancel.ImageAlign = ContentAlignment.MiddleLeft
         btnCancel.Location = New Point(239, 530)
         btnCancel.Margin = New Padding(3, 4, 3, 4)
@@ -261,7 +261,7 @@ Partial Class frmSubscriberUpdate
         btnUpdate.FlatStyle = FlatStyle.Flat
         btnUpdate.Font = New Font("Segoe UI", 12F)
         btnUpdate.ForeColor = Color.White
-        'btnUpdate.Image = My.Resources.exportReport
+        'btnUpdate.Image = Global.SPARX_Management_System.My.Resources.exportReport
         btnUpdate.ImageAlign = ContentAlignment.MiddleLeft
         btnUpdate.Location = New Point(388, 530)
         btnUpdate.Margin = New Padding(3, 4, 3, 4)

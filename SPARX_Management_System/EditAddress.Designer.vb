@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class EditAddress
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,16 @@ Partial Class EditAddress
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
-        LMTxtBox = New TextBox()
-        UpdateAddressBtn = New ButtonRounded()
-        CancelAddressBtn = New ButtonRounded()
-        BrgyTxtBox = New TextBox()
-        MunTxtBox = New TextBox()
-        ProvinceTxtBox = New TextBox()
-        CountryTxtBox = New TextBox()
+        TxtLandmark = New TextBox() ' CHANGED TYPE AND NAME: From Landmark1/ComboBox to TxtLandmark/TextBox
+        CmbBarangay = New ComboBox() ' CHANGED NAME: From Barangay1
+        CmbMunicipality = New ComboBox() ' CHANGED NAME: From Municipality1
+        CmbProvince = New ComboBox() ' CHANGED NAME: From Province1
+        CmbCountry = New ComboBox() ' CHANGED NAME: From Country1
+        SaveBtn = New ButtonRounded() ' CHANGED NAME: From UpdateAddressBtn
+        CancelBtn = New ButtonRounded() ' CHANGED NAME: From CancelAddressBtn
         EditLMLbl = New Label()
         EditBrgyLbl = New Label()
         EditMunLbl = New Label()
@@ -44,13 +44,13 @@ Partial Class EditAddress
         ' 
         ' Panel1
         ' 
-        Panel1.Controls.Add(LMTxtBox)
-        Panel1.Controls.Add(UpdateAddressBtn)
-        Panel1.Controls.Add(CancelAddressBtn)
-        Panel1.Controls.Add(BrgyTxtBox)
-        Panel1.Controls.Add(MunTxtBox)
-        Panel1.Controls.Add(ProvinceTxtBox)
-        Panel1.Controls.Add(CountryTxtBox)
+        Panel1.Controls.Add(TxtLandmark) ' Renamed
+        Panel1.Controls.Add(CmbBarangay) ' Renamed
+        Panel1.Controls.Add(CmbMunicipality) ' Renamed
+        Panel1.Controls.Add(CmbProvince) ' Renamed
+        Panel1.Controls.Add(CmbCountry) ' Renamed
+        Panel1.Controls.Add(SaveBtn) ' Renamed
+        Panel1.Controls.Add(CancelBtn) ' Renamed
         Panel1.Controls.Add(EditLMLbl)
         Panel1.Controls.Add(EditBrgyLbl)
         Panel1.Controls.Add(EditMunLbl)
@@ -62,73 +62,77 @@ Partial Class EditAddress
         Panel1.Size = New Size(375, 267)
         Panel1.TabIndex = 0
         ' 
-        ' LMTxtBox
+        ' TxtLandmark
         ' 
-        LMTxtBox.Location = New Point(128, 193)
-        LMTxtBox.Name = "LMTxtBox"
-        LMTxtBox.Size = New Size(214, 23)
-        LMTxtBox.TabIndex = 44
+        TxtLandmark.Location = New Point(127, 187) ' CHANGED FROM ComboBox TO TextBox
+        TxtLandmark.Name = "TxtLandmark" ' Renamed from Landmark1
+        TxtLandmark.Size = New Size(215, 23)
+        TxtLandmark.TabIndex = 48
         ' 
-        ' UpdateAddressBtn
+        ' CmbBarangay
         ' 
-        UpdateAddressBtn.BackColor = Color.FromArgb(CByte(70), CByte(130), CByte(255))
-        UpdateAddressBtn.DialogResult = DialogResult.OK
-        UpdateAddressBtn.FlatAppearance.BorderSize = 0
-        UpdateAddressBtn.FlatStyle = FlatStyle.Flat
-        UpdateAddressBtn.ForeColor = Color.White
-        UpdateAddressBtn.Location = New Point(254, 222)
-        UpdateAddressBtn.Name = "UpdateAddressBtn"
-        UpdateAddressBtn.Size = New Size(88, 31)
-        UpdateAddressBtn.TabIndex = 43
-        UpdateAddressBtn.Text = "Update"
-        UpdateAddressBtn.UseVisualStyleBackColor = False
+        CmbBarangay.FormattingEnabled = True
+        CmbBarangay.Location = New Point(127, 158)
+        CmbBarangay.Name = "CmbBarangay" ' Renamed from Barangay1
+        CmbBarangay.Size = New Size(215, 23)
+        CmbBarangay.TabIndex = 47
         ' 
-        ' CancelAddressBtn
+        ' CmbMunicipality
         ' 
-        CancelAddressBtn.BackColor = Color.FromArgb(CByte(70), CByte(130), CByte(255))
-        CancelAddressBtn.DialogResult = DialogResult.Cancel
-        CancelAddressBtn.FlatAppearance.BorderSize = 0
-        CancelAddressBtn.FlatStyle = FlatStyle.Flat
-        CancelAddressBtn.ForeColor = Color.White
-        CancelAddressBtn.Location = New Point(160, 222)
-        CancelAddressBtn.Name = "CancelAddressBtn"
-        CancelAddressBtn.Size = New Size(88, 31)
-        CancelAddressBtn.TabIndex = 42
-        CancelAddressBtn.Text = "Cancel"
-        CancelAddressBtn.UseVisualStyleBackColor = False
+        CmbMunicipality.FormattingEnabled = True
+        CmbMunicipality.Location = New Point(127, 126)
+        CmbMunicipality.Name = "CmbMunicipality" ' Renamed from Municipality1
+        CmbMunicipality.Size = New Size(215, 23)
+        CmbMunicipality.TabIndex = 46
         ' 
-        ' BrgyTxtBox
+        ' CmbProvince
         ' 
-        BrgyTxtBox.Location = New Point(128, 159)
-        BrgyTxtBox.Name = "BrgyTxtBox"
-        BrgyTxtBox.Size = New Size(214, 23)
-        BrgyTxtBox.TabIndex = 41
+        CmbProvince.FormattingEnabled = True
+        CmbProvince.Location = New Point(127, 91)
+        CmbProvince.Name = "CmbProvince" ' Renamed from Province1
+        CmbProvince.Size = New Size(215, 23)
+        CmbProvince.TabIndex = 45
         ' 
-        ' MunTxtBox
+        ' CmbCountry
         ' 
-        MunTxtBox.Location = New Point(128, 125)
-        MunTxtBox.Name = "MunTxtBox"
-        MunTxtBox.Size = New Size(214, 23)
-        MunTxtBox.TabIndex = 40
+        CmbCountry.FormattingEnabled = True
+        CmbCountry.Location = New Point(127, 56)
+        CmbCountry.Name = "CmbCountry" ' Renamed from Country1
+        CmbCountry.Size = New Size(215, 23)
+        CmbCountry.TabIndex = 44
         ' 
-        ' ProvinceTxtBox
+        ' SaveBtn
         ' 
-        ProvinceTxtBox.Location = New Point(128, 90)
-        ProvinceTxtBox.Name = "ProvinceTxtBox"
-        ProvinceTxtBox.Size = New Size(214, 23)
-        ProvinceTxtBox.TabIndex = 39
+        SaveBtn.BackColor = Color.FromArgb(70, 130, 255)
+        SaveBtn.DialogResult = DialogResult.OK
+        SaveBtn.FlatAppearance.BorderSize = 0
+        SaveBtn.FlatStyle = FlatStyle.Flat
+        SaveBtn.ForeColor = Color.White
+        SaveBtn.Location = New Point(254, 222)
+        SaveBtn.Name = "SaveBtn" ' Renamed from UpdateAddressBtn
+        SaveBtn.Size = New Size(88, 31)
+        SaveBtn.TabIndex = 43
+        SaveBtn.Text = "Update"
+        SaveBtn.UseVisualStyleBackColor = False
         ' 
-        ' CountryTxtBox
+        ' CancelBtn
         ' 
-        CountryTxtBox.Location = New Point(128, 53)
-        CountryTxtBox.Name = "CountryTxtBox"
-        CountryTxtBox.Size = New Size(214, 23)
-        CountryTxtBox.TabIndex = 38
+        CancelBtn.BackColor = Color.FromArgb(70, 130, 255)
+        CancelBtn.DialogResult = DialogResult.Cancel
+        CancelBtn.FlatAppearance.BorderSize = 0
+        CancelBtn.FlatStyle = FlatStyle.Flat
+        CancelBtn.ForeColor = Color.White
+        CancelBtn.Location = New Point(160, 222)
+        CancelBtn.Name = "CancelBtn" ' Renamed from CancelAddressBtn
+        CancelBtn.Size = New Size(88, 31)
+        CancelBtn.TabIndex = 42
+        CancelBtn.Text = "Cancel"
+        CancelBtn.UseVisualStyleBackColor = False
         ' 
         ' EditLMLbl
         ' 
         EditLMLbl.AutoSize = True
-        EditLMLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EditLMLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         EditLMLbl.Location = New Point(15, 194)
         EditLMLbl.Name = "EditLMLbl"
         EditLMLbl.Size = New Size(69, 17)
@@ -139,7 +143,7 @@ Partial Class EditAddress
         ' EditBrgyLbl
         ' 
         EditBrgyLbl.AutoSize = True
-        EditBrgyLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EditBrgyLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         EditBrgyLbl.Location = New Point(15, 159)
         EditBrgyLbl.Name = "EditBrgyLbl"
         EditBrgyLbl.Size = New Size(65, 17)
@@ -150,7 +154,7 @@ Partial Class EditAddress
         ' EditMunLbl
         ' 
         EditMunLbl.AutoSize = True
-        EditMunLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EditMunLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         EditMunLbl.Location = New Point(15, 126)
         EditMunLbl.Name = "EditMunLbl"
         EditMunLbl.Size = New Size(85, 17)
@@ -161,7 +165,7 @@ Partial Class EditAddress
         ' EditProvineLbl
         ' 
         EditProvineLbl.AutoSize = True
-        EditProvineLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EditProvineLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         EditProvineLbl.Location = New Point(15, 91)
         EditProvineLbl.Name = "EditProvineLbl"
         EditProvineLbl.Size = New Size(61, 17)
@@ -172,7 +176,7 @@ Partial Class EditAddress
         ' EditCountryLbl
         ' 
         EditCountryLbl.AutoSize = True
-        EditCountryLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EditCountryLbl.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0)
         EditCountryLbl.Location = New Point(15, 57)
         EditCountryLbl.Name = "EditCountryLbl"
         EditCountryLbl.Size = New Size(58, 17)
@@ -201,7 +205,7 @@ Partial Class EditAddress
         ' EditLbl
         ' 
         EditLbl.AutoSize = True
-        EditLbl.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        EditLbl.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, 0)
         EditLbl.Location = New Point(12, 9)
         EditLbl.Name = "EditLbl"
         EditLbl.Size = New Size(104, 21)
@@ -211,7 +215,7 @@ Partial Class EditAddress
         ' 
         ' EditAddress
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(373, 263)
@@ -225,17 +229,9 @@ Partial Class EditAddress
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents ChangePassBtn As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents LMTxtBox As TextBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents UpdateAddressBtn As ButtonRounded
-    Friend WithEvents CancelAddressBtn As ButtonRounded
-    Friend WithEvents BrgyTxtBox As TextBox
-    Friend WithEvents MunTxtBox As TextBox
-    Friend WithEvents ProvinceTxtBox As TextBox
-    Friend WithEvents CountryTxtBox As TextBox
+    Friend WithEvents SaveBtn As ButtonRounded ' Renamed from UpdateAddressBtn
+    Friend WithEvents CancelBtn As ButtonRounded ' Renamed from CancelAddressBtn
     Friend WithEvents EditLMLbl As Label
     Friend WithEvents EditBrgyLbl As Label
     Friend WithEvents EditMunLbl As Label
@@ -244,5 +240,9 @@ Partial Class EditAddress
     Friend WithEvents EditAddressPnl As Panel
     Friend WithEvents Line3 As Label
     Friend WithEvents EditLbl As Label
+    Friend WithEvents TxtLandmark As TextBox ' Changed Type and Name
+    Friend WithEvents CmbBarangay As ComboBox ' Renamed from Barangay1
+    Friend WithEvents CmbMunicipality As ComboBox ' Renamed from Municipality1
+    Friend WithEvents CmbProvince As ComboBox ' Renamed from Province1
+    Friend WithEvents CmbCountry As ComboBox ' Renamed from Country1
 End Class
-

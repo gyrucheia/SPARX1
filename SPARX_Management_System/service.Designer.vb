@@ -228,7 +228,7 @@ Partial Class service
         ' 
         ' IconFilter
         ' 
-        IconFilter.Image = My.Resources.filter
+        IconFilter.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("filter"), Image)
         IconFilter.Location = New Point(20, 20)
         IconFilter.Name = "IconFilter"
         IconFilter.Size = New Size(24, 24)
@@ -272,7 +272,7 @@ Partial Class service
         ' 
         ' IconPending
         ' 
-        IconPending.Image = My.Resources.Pending
+        IconPending.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("Pending"), Image)
         IconPending.Location = New Point(286, 36)
         IconPending.Name = "IconPending"
         IconPending.Size = New Size(48, 50)
@@ -316,7 +316,7 @@ Partial Class service
         ' 
         ' IconInProgress
         ' 
-        IconInProgress.Image = My.Resources.redInProgress
+        IconInProgress.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("redInProgress"), Image)
         IconInProgress.Location = New Point(286, 36)
         IconInProgress.Name = "IconInProgress"
         IconInProgress.Size = New Size(48, 50)
@@ -360,7 +360,7 @@ Partial Class service
         ' 
         ' IconComplete
         ' 
-        IconComplete.Image = My.Resources.greenCompleted
+        IconComplete.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("greenCompleted"), Image)
         IconComplete.Location = New Point(286, 36)
         IconComplete.Name = "IconComplete"
         IconComplete.Size = New Size(48, 50)
@@ -404,7 +404,7 @@ Partial Class service
         ' 
         ' IconTotalRequest
         ' 
-        IconTotalRequest.Image = My.Resources.BLueWrench
+        IconTotalRequest.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("BLueWrench"), Image)
         IconTotalRequest.Location = New Point(286, 36)
         IconTotalRequest.Name = "IconTotalRequest"
         IconTotalRequest.Size = New Size(48, 50)
@@ -483,7 +483,7 @@ Partial Class service
         ' SSDRedDot
         ' 
         SSDRedDot.Anchor = AnchorStyles.Top
-        SSDRedDot.Image = My.Resources.redDot
+        SSDRedDot.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("redDot"), Image)
         SSDRedDot.Location = New Point(512, 361)
         SSDRedDot.Name = "SSDRedDot"
         SSDRedDot.Size = New Size(12, 12)
@@ -542,7 +542,7 @@ Partial Class service
         ' SSDOrange1Dot
         ' 
         SSDOrange1Dot.Anchor = AnchorStyles.Top
-        SSDOrange1Dot.Image = My.Resources.EcstacyDot
+        SSDOrange1Dot.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("EcstacyDot"), Image)
         SSDOrange1Dot.Location = New Point(116, 358)
         SSDOrange1Dot.Name = "SSDOrange1Dot"
         SSDOrange1Dot.Size = New Size(12, 12)
@@ -565,7 +565,7 @@ Partial Class service
         ' SSDOrange2Dot
         ' 
         SSDOrange2Dot.Anchor = AnchorStyles.Top
-        SSDOrange2Dot.Image = My.Resources.ButtercupDot
+        SSDOrange2Dot.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("ButtercupDot"), Image)
         SSDOrange2Dot.Location = New Point(512, 317)
         SSDOrange2Dot.Name = "SSDOrange2Dot"
         SSDOrange2Dot.Size = New Size(12, 12)
@@ -588,7 +588,7 @@ Partial Class service
         ' x
         ' 
         x.Anchor = AnchorStyles.Top
-        x.Image = My.Resources.greenDot
+        x.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("greenDot"), Image)
         x.Location = New Point(116, 317)
         x.Name = "x"
         x.Size = New Size(12, 12)
@@ -670,7 +670,7 @@ Partial Class service
         ' STDGreenDot
         ' 
         STDGreenDot.Anchor = AnchorStyles.Top
-        STDGreenDot.Image = My.Resources.greenDot
+        STDGreenDot.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("greenDot"), Image)
         STDGreenDot.Location = New Point(533, 361)
         STDGreenDot.Name = "STDGreenDot"
         STDGreenDot.Size = New Size(12, 12)
@@ -729,7 +729,7 @@ Partial Class service
         ' STDOrange
         ' 
         STDOrange.Anchor = AnchorStyles.Top
-        STDOrange.Image = My.Resources.EcstacyDot
+        STDOrange.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("EcstacyDot"), Image)
         STDOrange.Location = New Point(109, 361)
         STDOrange.Name = "STDOrange"
         STDOrange.Size = New Size(12, 12)
@@ -752,7 +752,7 @@ Partial Class service
         ' STDBlueDot
         ' 
         STDBlueDot.Anchor = AnchorStyles.Top
-        STDBlueDot.Image = My.Resources.BlueDot
+        STDBlueDot.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("BlueDot"), Image)
         STDBlueDot.Location = New Point(533, 320)
         STDBlueDot.Name = "STDBlueDot"
         STDBlueDot.Size = New Size(12, 12)
@@ -775,7 +775,7 @@ Partial Class service
         ' STDRedDot
         ' 
         STDRedDot.Anchor = AnchorStyles.Top
-        STDRedDot.Image = My.Resources.redDot
+        STDRedDot.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("redDot"), Image)
         STDRedDot.Location = New Point(108, 320)
         STDRedDot.Name = "STDRedDot"
         STDRedDot.Size = New Size(12, 12)
@@ -910,7 +910,7 @@ Partial Class service
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.export
+        PictureBox1.Image = CType(Global.SPARX_Management_System.My.Resources.ResourceManager.GetObject("exportReport"), Image)
         PictureBox1.Location = New Point(4, 6)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(20, 20)
